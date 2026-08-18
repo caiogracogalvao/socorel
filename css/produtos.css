@@ -1372,8 +1372,18 @@
 
 
     .products-hero__background {
-        background-position:
-            62% center;
+        background-image:
+            linear-gradient(
+                90deg,
+                rgba(4, 17, 37, 0.82) 0%,
+                rgba(4, 17, 37, 0.58) 32%,
+                rgba(4, 17, 37, 0.22) 63%,
+                rgba(4, 17, 37, 0.05) 100%
+            ),
+            url("../assets/products/hero-produtos-mobile.jpg");
+
+        background-size: cover;
+        background-position: center;
     }
 
 

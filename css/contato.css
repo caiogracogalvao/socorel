@@ -24,6 +24,10 @@
 
 
 
+
+
+
+
 .site-header__inner {
 
     width: 100%;
@@ -46,6 +50,10 @@
 
 
 
+
+
+
+
 .site-logo {
 
     display: flex;
@@ -55,6 +63,10 @@
     height: 100%;
 
 }
+
+
+
+
 
 
 
@@ -74,6 +86,10 @@
 
 
 
+
+
+
+
 .site-nav {
 
     display: flex;
@@ -83,6 +99,10 @@
     gap: 42px;
 
 }
+
+
+
+
 
 
 
@@ -107,6 +127,10 @@
         color var(--transition-normal);
 
 }
+
+
+
+
 
 
 
@@ -142,6 +166,10 @@
 
 
 
+
+
+
+
 .site-nav__link:hover,
 
 .site-nav__link.is-active {
@@ -154,6 +182,10 @@
 
 
 
+
+
+
+
 .site-nav__link:hover::after,
 
 .site-nav__link.is-active::after {
@@ -161,6 +193,10 @@
     transform: scaleX(1);
 
 }
+
+
+
+
 
 
 
@@ -196,6 +232,10 @@
 
 
 
+
+
+
+
 .menu-toggle span {
 
     display: block;
@@ -207,6 +247,10 @@
     background: var(--color-navy);
 
 }
+
+
+
+
 
 
 
@@ -240,6 +284,10 @@
 
 
 
+
+
+
+
 .contact-hero__background {
 
     position: absolute;
@@ -260,6 +308,10 @@
 
 
 
+
+
+
+
 .contact-hero__content {
 
     position: relative;
@@ -267,6 +319,10 @@
     z-index: 1;
 
 }
+
+
+
+
 
 
 
@@ -283,6 +339,10 @@
         translateX(-70px);
 
 }
+
+
+
+
 
 
 
@@ -310,6 +370,10 @@
 
 
 
+
+
+
+
 .contact-hero__eyebrow::after {
 
     content: "";
@@ -323,6 +387,10 @@
         var(--color-brand);
 
 }
+
+
+
+
 
 
 
@@ -354,6 +422,10 @@
 
 
 
+
+
+
+
 .contact-hero__description {
 
     max-width: 520px;
@@ -369,6 +441,10 @@
     line-height: 1.6;
 
 }
+
+
+
+
 
 
 
@@ -396,6 +472,10 @@
 
 
 
+
+
+
+
 .contact-details__heading {
 
     max-width: 850px;
@@ -405,6 +485,10 @@
     text-align: center;
 
 }
+
+
+
+
 
 
 
@@ -423,6 +507,10 @@
     letter-spacing: 0.14em;
 
 }
+
+
+
+
 
 
 
@@ -450,6 +538,10 @@
 
 
 
+
+
+
+
 .contact-details__description {
 
     max-width: 620px;
@@ -465,6 +557,10 @@
     line-height: 1.7;
 
 }
+
+
+
+
 
 
 
@@ -503,6 +599,10 @@
     grid-row: 2;
 
 }
+
+
+
+
 
 
 
@@ -548,6 +648,10 @@
 
 
 
+
+
+
+
 .contact-card:hover {
 
     transform:
@@ -563,6 +667,10 @@
         0 16px 35px rgba(7, 27, 58, 0.08);
 
 }
+
+
+
+
 
 
 
@@ -608,11 +716,19 @@
 
 
 
+
+
+
+
 .contact-card__content {
 
     width: 100%;
 
 }
+
+
+
+
 
 
 
@@ -638,6 +754,10 @@
 
 
 
+
+
+
+
 .contact-card__content p {
 
     margin-top: 5px;
@@ -651,6 +771,10 @@
     line-height: 1.55;
 
 }
+
+
+
+
 
 
 
@@ -682,6 +806,10 @@
 
 
 
+
+
+
+
 .contact-card__link:hover {
 
     color:
@@ -689,6 +817,10 @@
         var(--color-brand);
 
 }
+
+
+
+
 
 
 
@@ -707,6 +839,10 @@
         flex-start;
 
 }
+
+
+
+
 
 
 
@@ -760,6 +896,10 @@
 
 
 
+
+
+
+
 .whatsapp-button:hover {
 
     transform:
@@ -779,6 +919,14 @@
         var(--color-white);
 
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -942,6 +1090,10 @@
 
 
 
+
+
+
+
 .contact-location__grid {
 
     display:
@@ -968,6 +1120,10 @@
 
 
 
+
+
+
+
 .contact-location__info {
 
     display:
@@ -983,6 +1139,10 @@
         flex-start;
 
 }
+
+
+
+
 
 
 
@@ -1007,6 +1167,10 @@
         0.14em;
 
 }
+
+
+
+
 
 
 
@@ -1040,6 +1204,10 @@
 
 
 
+
+
+
+
 .contact-location__description {
 
     max-width:
@@ -1068,6 +1236,10 @@
 
 
 
+
+
+
+
 /* =========================================================
 
    ENDEREÇO
@@ -1089,6 +1261,10 @@
         2px solid var(--color-brand);
 
 }
+
+
+
+
 
 
 
@@ -1126,6 +1302,10 @@
 
 
 
+
+
+
+
 .contact-address__text {
 
     color:
@@ -1141,6 +1321,10 @@
         1.7;
 
 }
+
+
+
+
 
 
 
@@ -1212,6 +1396,10 @@
 
 
 
+
+
+
+
 .location-button {
 
     border:
@@ -1227,6 +1415,10 @@
         var(--color-navy);
 
 }
+
+
+
+
 
 
 
@@ -1256,6 +1448,10 @@
 
 
 
+
+
+
+
 .location-whatsapp {
 
     margin-top:
@@ -1280,6 +1476,10 @@
 
 
 
+
+
+
+
 .location-whatsapp:hover {
 
     transform:
@@ -1295,6 +1495,10 @@
         var(--color-navy);
 
 }
+
+
+
+
 
 
 
@@ -1334,6 +1538,10 @@
 
 
 
+
+
+
+
 .contact-map iframe {
 
     display:
@@ -1357,6 +1565,10 @@
         0;
 
 }
+
+
+
+
 
 
 
@@ -1388,6 +1600,10 @@
 
 
 
+
+
+
+
 .contact-closing__inner {
 
     max-width:
@@ -1403,6 +1619,10 @@
         center;
 
 }
+
+
+
+
 
 
 
@@ -1427,6 +1647,10 @@
         0.14em;
 
 }
+
+
+
+
 
 
 
@@ -1460,6 +1684,10 @@
 
 
 
+
+
+
+
 .contact-closing__text {
 
     max-width:
@@ -1488,6 +1716,10 @@
 
 
 
+
+
+
+
 /* =========================================================
 
    FOOTER
@@ -1505,6 +1737,10 @@
         rgba(255, 255, 255, 0.78);
 
 }
+
+
+
+
 
 
 
@@ -1534,6 +1770,10 @@
 
 
 
+
+
+
+
 .site-footer__brand {
 
     max-width:
@@ -1541,6 +1781,10 @@
         320px;
 
 }
+
+
+
+
 
 
 
@@ -1590,6 +1834,10 @@
 
 
 
+
+
+
+
 .site-footer__logo img {
 
     display:
@@ -1613,6 +1861,10 @@
         contain;
 
 }
+
+
+
+
 
 
 
@@ -1646,6 +1898,10 @@
 
 
 
+
+
+
+
 .site-footer__column {
 
     display:
@@ -1661,6 +1917,10 @@
         flex-start;
 
 }
+
+
+
+
 
 
 
@@ -1694,6 +1954,10 @@
 
 
 
+
+
+
+
 .site-footer__column a {
 
     margin-bottom:
@@ -1720,6 +1984,10 @@
 
 
 
+
+
+
+
 .site-footer__column a:hover {
 
     color:
@@ -1736,6 +2004,10 @@
 
 
 
+
+
+
+
 .site-footer__bottom {
 
     border-top:
@@ -1747,6 +2019,10 @@
         20px 0;
 
 }
+
+
+
+
 
 
 
@@ -1772,6 +2048,10 @@
 
 
 
+
+
+
+
 /* =========================================================
 
    TABLET
@@ -1792,6 +2072,10 @@
 
 
 
+
+
+
+
     .site-nav__link {
 
         font-size:
@@ -1799,6 +2083,10 @@
             17px;
 
     }
+
+
+
+
 
 
 
@@ -1816,6 +2104,10 @@
 
 
 
+
+
+
+
     .contact-location__grid {
 
         gap:
@@ -1825,6 +2117,10 @@
     }
 
 }
+
+
+
+
 
 
 
@@ -1850,6 +2146,10 @@
 
 
 
+
+
+
+
     .site-logo img {
 
         width:
@@ -1861,6 +2161,10 @@
             130px;
 
     }
+
+
+
+
 
 
 
@@ -1878,6 +2182,10 @@
 
 
 
+
+
+
+
     .menu-toggle {
 
         display:
@@ -1890,6 +2198,10 @@
 
 
 
+
+
+
+
     .contact-hero {
 
         min-height:
@@ -1897,6 +2209,10 @@
             calc(100svh - var(--header-height));
 
     }
+
+
+
+
 
 
 
@@ -1918,6 +2234,10 @@
 
 
 
+
+
+
+
     .contact-hero__title {
 
         font-size:
@@ -1925,6 +2245,10 @@
             clamp(40px, 7vw, 58px);
 
     }
+
+
+
+
 
 
 
@@ -1942,6 +2266,10 @@
 
 
 
+
+
+
+
     .contact-location {
 
         padding:
@@ -1949,6 +2277,10 @@
             80px 0;
 
     }
+
+
+
+
 
 
 
@@ -1970,6 +2302,10 @@
 
 
 
+
+
+
+
     .contact-location__info {
 
         max-width:
@@ -1977,6 +2313,10 @@
             680px;
 
     }
+
+
+
+
 
 
 
@@ -1994,6 +2334,10 @@
 
 
 
+
+
+
+
     .contact-map iframe {
 
         min-height:
@@ -2001,6 +2345,10 @@
             420px;
 
     }
+
+
+
+
 
 
 
@@ -2018,6 +2366,10 @@
 
 
 
+
+
+
+
     .site-footer__brand {
 
         grid-column:
@@ -2025,6 +2377,10 @@
             1 / -1;
 
     }
+
+
+
+
 
 
 
@@ -2043,6 +2399,10 @@
     }
 
 }
+
+
+
+
 
 
 
@@ -2068,6 +2428,10 @@
 
 
 
+
+
+
+
     .site-header__inner {
 
         padding:
@@ -2075,6 +2439,10 @@
             0 18px;
 
     }
+
+
+
+
 
 
 
@@ -2096,6 +2464,10 @@
 
 
 
+
+
+
+
     .contact-hero {
 
         min-height:
@@ -2108,13 +2480,21 @@
 
 
 
+
+
+
+
     .contact-hero__background {
+        background-image:
+            url("../assets/contato/hero-contato-mobile.jpg");
 
-        background-position:
-
-            64% center;
-
+            background-size: cover;
+            background-position: center;
     }
+
+
+
+
 
 
 
@@ -2132,6 +2512,10 @@
 
 
 
+
+
+
+
     .contact-hero__eyebrow {
 
         font-size:
@@ -2139,6 +2523,10 @@
             11px;
 
     }
+
+
+
+
 
 
 
@@ -2164,6 +2552,10 @@
 
 
 
+
+
+
+
     .contact-hero__description {
 
         font-size:
@@ -2171,6 +2563,10 @@
             16px;
 
     }
+
+
+
+
 
 
 
@@ -2188,6 +2584,10 @@
 
 
 
+
+
+
+
     .contact-details__heading {
 
         margin-bottom:
@@ -2195,6 +2595,10 @@
             30px;
 
     }
+
+
+
+
 
 
 
@@ -2212,6 +2616,10 @@
 
 
 
+
+
+
+
     .contact-details__description {
 
         font-size:
@@ -2219,6 +2627,10 @@
             15px;
 
     }
+
+
+
+
 
 
 
@@ -2246,6 +2658,10 @@
 
 
 
+
+
+
+
     .contact-card {
 
         min-height:
@@ -2257,6 +2673,10 @@
             24px;
 
     }
+
+
+
+
 
 
 
@@ -2274,6 +2694,10 @@
 
 
 
+
+
+
+
     .contact-location__title {
 
         font-size:
@@ -2281,6 +2705,10 @@
             32px;
 
     }
+
+
+
+
 
 
 
@@ -2298,6 +2726,10 @@
 
 
 
+
+
+
+
     .contact-map {
 
         min-height:
@@ -2305,6 +2737,10 @@
             350px;
 
     }
+
+
+
+
 
 
 
@@ -2322,6 +2758,10 @@
 
 
 
+
+
+
+
     .contact-closing {
 
         padding:
@@ -2329,6 +2769,10 @@
             45px 0;
 
     }
+
+
+
+
 
 
 
@@ -2346,6 +2790,10 @@
 
 
 
+
+
+
+
     .contact-closing__text {
 
         font-size:
@@ -2353,6 +2801,10 @@
             15px;
 
     }
+
+
+
+
 
 
 
@@ -2378,6 +2830,10 @@
 
 
 
+
+
+
+
     .site-footer__brand {
 
         grid-column:
@@ -2385,6 +2841,10 @@
             auto;
 
     }
+
+
+
+
 
 
 
@@ -2414,6 +2874,10 @@
 
 
 
+
+
+
+
     .site-footer__logo img {
 
         width:
@@ -2425,6 +2889,10 @@
             115px;
 
     }
+
+
+
+
 
 
 
@@ -2525,6 +2993,7 @@
 }
 
 
+
 /* =========================================================
 
    REDES SOCIAIS
@@ -2553,6 +3022,8 @@
 
 
 
+
+
 .contact-card--social .contact-card__icon img {
 
     width: 24px;
@@ -2567,6 +3038,8 @@
 
 
 
+
+
 .contact-card--social .contact-card__content {
 
     display: flex;
@@ -2576,6 +3049,8 @@
     align-items: flex-start;
 
 }
+
+
 
 
 
@@ -2625,6 +3100,8 @@
 
 
 
+
+
 .social-button:hover {
 
     transform: translateY(-2px);
@@ -2636,6 +3113,8 @@
     color: var(--color-white);
 
 }
+
+
 
 
 
@@ -2659,6 +3138,8 @@
 
 
 
+
+
 .social-button__icon img {
 
     width: 22px;
@@ -2670,6 +3151,8 @@
     object-fit: contain;
 
 }
+
+
 
 
 

@@ -1046,7 +1046,7 @@
 
     .hero__background {
         background-position:
-            60% center;
+            center;
 
         background-image:
             linear-gradient(
@@ -1055,7 +1055,7 @@
                 rgba(4, 17, 37, 0.62) 55%,
                 rgba(4, 17, 37, 0.28) 100%
             ),
-            url("../assets/hero/hero-desktop.jpg");
+            url("../assets/hero/hero-mobile.jpg");
     }
 
     .hero__text {
