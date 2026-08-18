@@ -2,15 +2,597 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SOCOREL</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="SOCOREL — tradição desde 1939, oferecendo qualidade e soluções em sal."
+    >
+
+    <title>SOCOREL | Desde 1939</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
 
-    <h1>SOCOREL</h1>
-    <p>Site em desenvolvimento.</p>
+    <!-- =====================================================
+         CABEÇALHO
+         ===================================================== -->
 
+    <header class="site-header">
+
+        <div class="site-header__inner">
+
+            <a
+                href="index.html"
+                class="site-logo"
+                aria-label="SOCOREL - Início"
+            >
+                <img
+                    src="assets/brand/logo-socorel.png"
+                    alt="SOCOREL"
+                >
+            </a>
+
+            <nav
+                class="site-nav"
+                aria-label="Navegação principal"
+            >
+
+                <a
+                    href="index.html"
+                    class="site-nav__link is-active"
+                >
+                    INÍCIO
+                </a>
+
+                <a
+                    href="empresa.html"
+                    class="site-nav__link"
+                >
+                    EMPRESA
+                </a>
+
+                <a
+                    href="produtos.html"
+                    class="site-nav__link"
+                >
+                    PRODUTOS
+                </a>
+
+                <a
+                    href="contato.html"
+                    class="site-nav__link"
+                >
+                    CONTATO
+                </a>
+
+            </nav>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =================================================
+             HERO
+             ================================================= -->
+
+        <section class="hero">
+
+            <div class="hero__background"></div>
+
+            <div class="container hero__content">
+
+                <div class="hero__text">
+
+                    <span class="hero__eyebrow">
+                        DESDE 1939
+                    </span>
+
+                    <h1 class="hero__title heading-serif">
+                        Tradição que<br>
+                        atravessa gerações.
+                    </h1>
+
+                    <p class="hero__description">
+                        Há mais de 85 anos oferecendo qualidade e soluções em sal.
+                    </p>
+
+                    <div class="hero__actions">
+
+                        <a
+                            href="empresa.html"
+                            class="btn btn-primary"
+                        >
+                            CONHEÇA A SOCOREL
+                        </a>
+
+                        <a
+                            href="produtos.html"
+                            class="btn btn-outline"
+                        >
+                            NOSSOS PRODUTOS
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             NOSSOS PRODUTOS
+             ================================================= -->
+
+        <section
+            class="products-preview"
+            id="produtos-preview"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-heading__eyebrow">
+                        CONHEÇA NOSSA LINHA
+                    </span>
+
+                    <h2 class="section-heading__title">
+                        NOSSOS PRODUTOS
+                    </h2>
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <div class="product-category-grid">
+
+                    <!-- CONSUMO HUMANO -->
+
+                    <article class="category-card">
+
+                        <div class="category-card__header">
+
+                            <span
+                                class="category-card__icon"
+                                aria-hidden="true"
+                            >
+                                <svg
+                                    viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle
+                                        cx="24"
+                                        cy="15"
+                                        r="6"
+                                    />
+                                    <path
+                                        d="M13 37c0-7 4.8-12 11-12s11 5 11 12"
+                                    />
+                                </svg>
+                            </span>
+
+                            <h3>
+                                CONSUMO HUMANO
+                            </h3>
+
+                        </div>
+
+                        <p class="category-card__description">
+                            Produtos para o dia a dia, com qualidade e confiança.
+                        </p>
+
+                        <div class="category-card__products">
+
+                            <img
+                                src="assets/products/consumo/marlin.png"
+                                alt="Sal Marlin refinado"
+                            >
+
+                            <img
+                                src="assets/products/consumo/nevado.png"
+                                alt="Sal Nevado moído"
+                            >
+
+                        </div>
+
+                        <a
+                            href="produtos.html#consumo-humano"
+                            class="category-card__link"
+                        >
+                            VER PRODUTOS
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- INDUSTRIAL -->
+
+                    <article class="category-card">
+
+                        <div class="category-card__header">
+
+                            <span
+                                class="category-card__icon"
+                                aria-hidden="true"
+                            >
+                                <svg
+                                    viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M8 39V20l10 5V16l10 5V10l12 7v22"
+                                    />
+                                    <path d="M8 39h32"/>
+                                    <path d="M15 30h4M25 30h4M15 35h4M25 35h4"/>
+                                </svg>
+                            </span>
+
+                            <h3>
+                                INDUSTRIAL
+                            </h3>
+
+                        </div>
+
+                        <p class="category-card__description">
+                            Soluções em sal para diferentes aplicações e necessidades.
+                        </p>
+
+                        <div class="category-card__products">
+
+                            <img
+                                src="assets/products/industrial/salinor-25kg.png"
+                                alt="Salinor industrial"
+                            >
+
+                            <img
+                                src="assets/products/industrial/monarca-refinado-com-iodo.png"
+                                alt="Sal Monarca refinado com iodo"
+                            >
+
+                        </div>
+
+                        <a
+                            href="produtos.html#industrial"
+                            class="category-card__link"
+                        >
+                            VER PRODUTOS
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- PECUÁRIA -->
+
+                    <article class="category-card">
+
+                        <div class="category-card__header">
+
+                            <span
+                                class="category-card__icon"
+                                aria-hidden="true"
+                            >
+                                <svg
+                                    viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12 31l-2-8 5-6 7 1 5-5 7 3 2 6-3 8-7 4H19z"
+                                    />
+                                    <path d="M17 18l-2-5"/>
+                                    <path d="M29 17l3-5"/>
+                                    <circle
+                                        cx="19"
+                                        cy="23"
+                                        r="1.5"
+                                    />
+                                    <path d="M27 27c2 1 4 1 6 0"/>
+                                </svg>
+                            </span>
+
+                            <h3>
+                                PECUÁRIA
+                            </h3>
+
+                        </div>
+
+                        <p class="category-card__description">
+                            Produtos para atender às necessidades da pecuária.
+                        </p>
+
+                        <div
+                            class="category-card__products category-card__products--three"
+                        >
+
+                            <img
+                                src="assets/products/pecuaria/luzente.png"
+                                alt="Sal Luzente"
+                            >
+
+                            <img
+                                src="assets/products/pecuaria/ema.png"
+                                alt="Sal Ema"
+                            >
+
+                            <img
+                                src="assets/products/pecuaria/boiadeiro.png"
+                                alt="Sal Boiadeiro"
+                            >
+
+                        </div>
+
+                        <a
+                            href="produtos.html#pecuaria"
+                            class="category-card__link"
+                        >
+                            VER PRODUTOS
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DIFERENCIAIS
+             ================================================= -->
+
+        <section class="highlights">
+
+            <div class="container highlights__inner">
+
+                <!-- 85+ ANOS -->
+
+                <article class="highlight">
+
+                    <div
+                        class="highlight__icon"
+                        aria-hidden="true"
+                    >
+                        <svg
+                            viewBox="0 0 48 48"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle cx="24" cy="14" r="6"/>
+                            <path d="M13 36c0-7 5-11 11-11s11 4 11 11"/>
+                            <circle cx="9" cy="20" r="4"/>
+                            <path d="M2 38c0-5 3-8 7-8"/>
+                            <circle cx="39" cy="20" r="4"/>
+                            <path d="M46 38c0-5-3-8-7-8"/>
+                        </svg>
+                    </div>
+
+                    <div class="highlight__content">
+                        <strong>85+</strong>
+                        <span>ANOS DE HISTÓRIA</span>
+                    </div>
+
+                </article>
+
+
+                <!-- ATENDIMENTO -->
+
+                <article class="highlight">
+
+                    <div
+                        class="highlight__icon"
+                        aria-hidden="true"
+                    >
+                        <svg
+                            viewBox="0 0 48 48"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle cx="24" cy="24" r="16"/>
+                            <path d="M24 17v7l5 3"/>
+                            <path d="M14 12l-4-4"/>
+                            <path d="M34 12l4-4"/>
+                        </svg>
+                    </div>
+
+                    <div class="highlight__content">
+                        <strong>ATENDIMENTO</strong>
+                        <span>PERSONALIZADO</span>
+                    </div>
+
+                </article>
+
+
+                <!-- QUALIDADE -->
+
+                <article class="highlight">
+
+                    <div
+                        class="highlight__icon"
+                        aria-hidden="true"
+                    >
+                        <svg
+                            viewBox="0 0 48 48"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M24 6l4 4 6-1 1 6 5 4-3 5 1 6-6 2-3 5-5-3-5 3-3-5-6-2 1-6-3-5 5-4 1-6 6 1z"
+                            />
+                            <path d="M18 24l4 4 8-9"/>
+                        </svg>
+                    </div>
+
+                    <div class="highlight__content">
+                        <strong>QUALIDADE EM</strong>
+                        <span>TODOS OS PROCESSOS</span>
+                    </div>
+
+                </article>
+
+
+                <!-- ATUAÇÃO NO RN -->
+
+                <article class="highlight">
+
+                    <div
+                        class="highlight__icon"
+                        aria-hidden="true"
+                    >
+                        <svg
+                            viewBox="0 0 48 48"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M11 14l8-5 7 3 7-4 5 7-2 8 4 6-7 3-4 8-8-3-8 2-3-7 3-6-4-6z"
+                            />
+                            <circle cx="25" cy="23" r="3"/>
+                            <path d="M25 26v7"/>
+                        </svg>
+                    </div>
+
+                    <div class="highlight__content">
+                        <strong>ATUAÇÃO NO RN</strong>
+                        <span>PRESENÇA REGIONAL</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container site-footer__grid">
+
+            <!-- MARCA -->
+
+            <div class="site-footer__brand">
+
+                <a
+                    href="index.html"
+                    class="site-footer__logo"
+                    aria-label="SOCOREL - Início"
+                >
+                    <img
+                        src="assets/brand/logo-socorel-footer.png"
+                        alt="SOCOREL"
+                    >
+                </a>
+
+                <p>
+                    Tradição, qualidade e soluções em sal
+                    desde 1939.
+                </p>
+
+            </div>
+
+
+            <!-- EMPRESA -->
+
+            <div class="site-footer__column">
+
+                <h3>EMPRESA</h3>
+
+                <a href="empresa.html">
+                    Nossa história
+                </a>
+
+            </div>
+
+
+            <!-- PRODUTOS -->
+
+            <div class="site-footer__column">
+
+                <h3>PRODUTOS</h3>
+
+                <a href="produtos.html#consumo-humano">
+                    Consumo Humano
+                </a>
+
+                <a href="produtos.html#industrial">
+                    Industrial
+                </a>
+
+                <a href="produtos.html#pecuaria">
+                    Pecuária
+                </a>
+
+            </div>
+
+
+            <!-- CONTATO -->
+
+            <div class="site-footer__column">
+
+                <h3>CONTATO</h3>
+
+                <a href="contato.html">
+                    Telefones
+                </a>
+
+                <a href="contato.html">
+                    WhatsApp
+                </a>
+
+                <a href="contato.html">
+                    E-mail
+                </a>
+
+                <a href="contato.html">
+                    Localização
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="site-footer__bottom">
+
+            <div class="container">
+
+                <p>
+                    © SOCOREL — Desde 1939
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+<script src="js/menu.js" defer></script>
 </body>
 </html>

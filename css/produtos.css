@@ -1,0 +1,2882 @@
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+.site-header {
+    position: relative;
+    z-index: 20;
+
+    height: var(--header-height);
+
+    background: var(--color-white);
+
+    border-bottom:
+        1px solid rgba(7, 27, 58, 0.08);
+}
+
+
+.site-header__inner {
+    width: 100%;
+    max-width: none;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+
+    padding: 0 36px;
+}
+
+
+.site-logo {
+    display: flex;
+
+    align-items: center;
+
+    height: 100%;
+}
+
+
+.site-logo img {
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+}
+
+
+.site-nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 42px;
+}
+
+
+.site-nav__link {
+    position: relative;
+
+    color: var(--color-navy);
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.05em;
+
+    padding: 48px 0;
+
+    transition:
+        color var(--transition-normal);
+}
+
+
+.site-nav__link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 20px;
+
+    height: 2px;
+
+    background: var(--color-brand);
+
+    transform: scaleX(0);
+
+    transform-origin: center;
+
+    transition:
+        transform var(--transition-normal);
+}
+
+
+.site-nav__link:hover,
+.site-nav__link.is-active {
+    color: var(--color-brand);
+}
+
+
+.site-nav__link:hover::after,
+.site-nav__link.is-active::after {
+    transform: scaleX(1);
+}
+
+
+/* =========================================================
+   MENU MOBILE
+   ========================================================= */
+
+.menu-toggle {
+    display: none;
+
+    width: 44px;
+    height: 44px;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    cursor: pointer;
+}
+
+
+.menu-toggle span {
+    display: block;
+
+    width: 23px;
+    height: 2px;
+
+    background: var(--color-navy);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.products-hero {
+    position: relative;
+
+    min-height:
+        calc(100vh - var(--header-height));
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    color: var(--color-white);
+}
+
+
+.products-hero__background {
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(4, 17, 37, 0.82) 0%,
+            rgba(4, 17, 37, 0.58) 32%,
+            rgba(4, 17, 37, 0.22) 63%,
+            rgba(4, 17, 37, 0.05) 100%
+        ),
+        url("../assets/products/hero-produtos.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.products-hero__content {
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.products-hero__text {
+    max-width: 650px;
+
+    padding: 80px 0;
+}
+
+
+.products-hero__eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    color: #74d7c1;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+}
+
+
+.products-hero__eyebrow::after {
+    content: "";
+
+    width: 42px;
+    height: 2px;
+
+    background: var(--color-brand);
+}
+
+
+.products-hero__title {
+    margin-top: 18px;
+
+    color: var(--color-white);
+
+    font-size:
+        clamp(42px, 5vw, 70px);
+
+    line-height: 1.04;
+
+    font-weight: 500;
+
+    letter-spacing: -0.02em;
+}
+
+
+.products-hero__description {
+    max-width: 530px;
+
+    margin-top: 24px;
+
+    color:
+        rgba(255, 255, 255, 0.90);
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CATÁLOGO
+   ========================================================= */
+
+.products-catalog {
+    background: var(--color-off-white);
+
+    padding:
+        90px 0 100px;
+}
+
+
+/* =========================================================
+   SEÇÕES
+   ========================================================= */
+
+.product-section {
+    scroll-margin-top: 30px;
+}
+
+
+.product-section + .product-section {
+    margin-top: 90px;
+}
+
+
+.product-section__heading {
+    max-width: 900px;
+
+    margin:
+        0 auto 40px;
+
+    text-align: center;
+}
+
+
+.product-section__eyebrow {
+    color: var(--color-brand);
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.14em;
+}
+
+
+.product-section__title {
+    margin-top: 10px;
+
+    color: var(--color-navy);
+
+    font-size:
+        clamp(30px, 3vw, 44px);
+
+    line-height: 1.15;
+
+    font-weight: 500;
+}
+
+
+.product-section__description {
+    max-width: 650px;
+
+    margin:
+        14px auto 0;
+
+    color: var(--color-text-soft);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.product-card {
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+
+    background: var(--color-white);
+
+    border:
+        1px solid var(--color-border);
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 28px rgba(7, 27, 58, 0.05);
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal),
+        border-color var(--transition-normal);
+}
+
+
+.product-card:hover {
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(0, 155, 120, 0.35);
+
+    box-shadow:
+        0 18px 42px rgba(7, 27, 58, 0.10);
+}
+
+
+/* =========================================================
+   IMAGEM
+   ========================================================= */
+
+.product-card__image {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 245px;
+
+    padding:
+        26px 24px 8px;
+
+    background: var(--color-white);
+}
+
+
+.product-card__image img {
+    display: block;
+
+    width: auto;
+
+    height: 205px;
+
+    max-width: 82%;
+
+    object-fit: contain;
+
+    transition:
+        transform var(--transition-normal);
+}
+
+
+.product-card:hover
+.product-card__image img {
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   INFORMAÇÕES
+   ========================================================= */
+
+.product-card__info {
+    padding:
+        0 28px 30px;
+}
+
+
+.product-card__name {
+    color: var(--color-navy);
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.04em;
+
+    text-align: center;
+}
+
+
+.product-card__specs {
+    margin-top: 18px;
+
+    padding-top: 14px;
+
+    border-top:
+        1px solid rgba(7, 27, 58, 0.10);
+}
+
+
+/* =========================================================
+   LINHA DE TAMANHO / TIPO SIMPLES
+   ========================================================= */
+
+.product-card__row {
+    display: grid;
+
+    grid-template-columns:
+        82px
+        minmax(90px, 1fr)
+        86px
+        86px;
+
+    align-items: center;
+
+    column-gap: 10px;
+
+    margin-top: 10px;
+
+    width: 100%;
+}
+
+
+.product-card__row:first-child {
+    margin-top: 0;
+}
+
+
+.product-card__label {
+    color: var(--color-navy);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.04em;
+
+    white-space: nowrap;
+}
+
+
+.product-card__value {
+    color: var(--color-text-soft);
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   ETIQUETAS
+   ========================================================= */
+
+.product-card__badge {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 86px;
+
+    min-height: 25px;
+
+    padding:
+        3px 8px;
+
+    box-sizing: border-box;
+
+    border-radius: 999px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.03em;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   COM IODO = VERDE DA SOCOREL
+   ========================================================= */
+
+.product-card__badge--iodized {
+    background:
+        var(--color-brand);
+
+    color:
+        var(--color-white);
+}
+
+
+/* =========================================================
+   SEM IODO = NEUTRO
+   ========================================================= */
+
+.product-card__badge--without-iodine {
+    background:
+        rgba(7, 27, 58, 0.08);
+
+    color:
+        var(--color-navy);
+}
+
+
+/* =========================================================
+   LINHA SIMPLES — DUAS OPÇÕES
+   COM IODO À ESQUERDA
+   SEM IODO À DIREITA
+   ========================================================= */
+
+.product-card__row:has(
+    .product-card__badge--iodized
+):has(
+    .product-card__badge--without-iodine
+)
+.product-card__badge--iodized {
+    grid-column: 3;
+
+    justify-self: end;
+}
+
+
+.product-card__row:has(
+    .product-card__badge--iodized
+):has(
+    .product-card__badge--without-iodine
+)
+.product-card__badge--without-iodine {
+    grid-column: 4;
+
+    justify-self: start;
+}
+
+
+/* =========================================================
+   LINHA SIMPLES — APENAS COM IODO
+   CENTRALIZADO
+   ========================================================= */
+
+.product-card__row:not(:has(
+    .product-card__badge--without-iodine
+))
+.product-card__badge--iodized {
+    grid-column: 3 / 5;
+
+    justify-self: center;
+}
+
+
+/* =========================================================
+   LINHA SIMPLES — APENAS SEM IODO
+   CENTRALIZADO
+   ========================================================= */
+
+.product-card__row:not(:has(
+    .product-card__badge--iodized
+))
+.product-card__badge--without-iodine {
+    grid-column: 3 / 5;
+
+    justify-self: center;
+}
+
+
+/* =========================================================
+   BLOCO COM VÁRIOS TIPOS
+   ========================================================= */
+
+.product-card__type-block {
+    display: grid;
+
+    grid-template-columns:
+        82px
+        minmax(90px, 1fr)
+        86px
+        86px;
+
+    align-items: start;
+
+    column-gap: 10px;
+
+    margin-top: 10px;
+
+    width: 100%;
+}
+
+
+.product-card__type-block > .product-card__label {
+    grid-column: 1;
+}
+
+
+.product-card__type-list {
+    grid-column: 2 / 5;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   CADA LINHA DE TIPO
+   ========================================================= */
+
+.product-card__type-row {
+    display: grid;
+
+    grid-template-columns:
+        minmax(90px, 1fr)
+        86px
+        86px;
+
+    align-items: center;
+
+    column-gap: 10px;
+
+    min-height: 25px;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   TIPO — DUAS OPÇÕES
+   COM IODO À ESQUERDA
+   SEM IODO À DIREITA
+   ========================================================= */
+
+.product-card__type-row:has(
+    .product-card__badge--iodized
+):has(
+    .product-card__badge--without-iodine
+)
+.product-card__badge--iodized {
+    grid-column: 2;
+
+    justify-self: end;
+}
+
+
+.product-card__type-row:has(
+    .product-card__badge--iodized
+):has(
+    .product-card__badge--without-iodine
+)
+.product-card__badge--without-iodine {
+    grid-column: 3;
+
+    justify-self: start;
+}
+
+
+/* =========================================================
+   TIPO — APENAS COM IODO
+   CENTRALIZADO
+   ========================================================= */
+
+.product-card__type-row:not(:has(
+    .product-card__badge--without-iodine
+))
+.product-card__badge--iodized {
+    grid-column: 2 / 4;
+
+    justify-self: center;
+}
+
+
+/* =========================================================
+   TIPO — APENAS SEM IODO
+   CENTRALIZADO
+   ========================================================= */
+
+.product-card__type-row:not(:has(
+    .product-card__badge--iodized
+))
+.product-card__badge--without-iodine {
+    grid-column: 2 / 4;
+
+    justify-self: center;
+}
+
+
+/* =========================================================
+   SALINOR 1 TONELADA — AJUSTE
+   ========================================================= */
+
+.product-card--large-info .product-card__specs {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   TAMANHO
+   ========================================================= */
+
+.product-card--large-info
+.product-card__specs > .product-card__row {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-top: 0;
+
+    gap: 5px;
+}
+
+
+.product-card--large-info
+.product-card__specs > .product-card__row
+.product-card__label {
+    display: block;
+}
+
+
+.product-card--large-info
+.product-card__specs > .product-card__row
+.product-card__value {
+    display: block;
+}
+
+
+/* =========================================================
+   TIPOS
+   ========================================================= */
+
+.product-card--large-info
+.product-card__type-block {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    gap: 10px;
+}
+
+
+.product-card--large-info
+.product-card__type-block
+> .product-card__label {
+    display: block;
+}
+
+
+/* =========================================================
+   LISTA
+   ========================================================= */
+
+.product-card--large-info
+.product-card__type-list {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    gap: 9px;
+
+    padding-left: 20px;
+}
+
+
+/* =========================================================
+   LINHAS DOS TIPOS
+   ========================================================= */
+
+.product-card--large-info
+.product-card__type-row {
+    display: grid;
+
+    grid-template-columns:
+        105px
+        86px
+        86px;
+
+    align-items: center;
+
+    column-gap: 8px;
+
+    width: 100%;
+
+    min-height: 25px;
+}
+
+
+/* =========================================================
+   NOME DO TIPO
+   ========================================================= */
+
+.product-card--large-info
+.product-card__type-row
+.product-card__value {
+    grid-column: 1;
+
+    grid-row: 1;
+
+    justify-self: start;
+
+    transform:
+        translateX(15px);
+}
+
+
+/* =========================================================
+   COM IODO
+   ========================================================= */
+
+.product-card--large-info
+.product-card__type-row
+.product-card__badge--iodized {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    justify-self: center;
+}
+
+
+/* =========================================================
+   SEM IODO
+   ========================================================= */
+
+.product-card--large-info
+.product-card__type-row
+.product-card__badge--without-iodine {
+    grid-column: 3;
+
+    grid-row: 1;
+
+    justify-self: center;
+
+    transform:
+        translateX(15px);
+}
+
+
+/* =========================================================
+   SALINOR 25 KG
+   ========================================================= */
+
+.product-card--salinor-25
+.product-card__image img {
+    height: 210px;
+}
+
+
+/* =========================================================
+   ENCERRAMENTO
+   ========================================================= */
+
+.products-closing {
+    padding:
+        50px 0;
+
+    background:
+        var(--color-navy);
+
+    color:
+        var(--color-white);
+}
+
+
+.products-closing__inner {
+    max-width:
+        850px;
+
+    margin:
+        0 auto;
+
+    text-align:
+        center;
+}
+
+
+.products-closing__label {
+    color:
+        var(--color-brand);
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.14em;
+}
+
+
+.products-closing__title {
+    margin-top:
+        14px;
+
+    color:
+        var(--color-white);
+
+    font-size:
+        clamp(32px, 3.5vw, 48px);
+
+    line-height:
+        1.12;
+
+    font-weight:
+        500;
+}
+
+
+.products-closing__text {
+    max-width:
+        680px;
+
+    margin:
+        18px auto 0;
+
+    color:
+        rgba(255, 255, 255, 0.74);
+
+    font-size:
+        16px;
+
+    line-height:
+        1.7;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+    background:
+        #06152f;
+
+    color:
+        rgba(255, 255, 255, 0.78);
+}
+
+
+.site-footer__grid {
+    display:
+        grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1.2fr;
+
+    gap:
+        50px;
+
+    padding:
+        10px 0 5px;
+}
+
+
+.site-footer__brand {
+    max-width:
+        320px;
+}
+
+
+.site-footer__logo {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        150px;
+
+    height:
+        150px;
+
+    padding:
+        5px;
+
+    margin-left:
+        60px;
+
+    margin-top:
+        10px;
+
+    flex-shrink:
+        0;
+}
+
+
+.site-footer__logo img {
+    display:
+        block;
+
+    width:
+        140px;
+
+    height:
+        140px;
+
+    max-width:
+        none;
+
+    object-fit:
+        contain;
+}
+
+
+.site-footer__brand p {
+    max-width:
+        260px;
+
+    margin-top:
+        0;
+
+    color:
+        rgba(255, 255, 255, 0.68);
+
+    font-size:
+        15px;
+
+    line-height:
+        1.65;
+}
+
+
+.site-footer__column {
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        flex-start;
+}
+
+
+.site-footer__column h3 {
+    margin-bottom:
+        18px;
+
+    color:
+        var(--color-white);
+
+    font-size:
+        15px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.08em;
+}
+
+
+.site-footer__column a {
+    margin-bottom:
+        10px;
+
+    color:
+        rgba(255, 255, 255, 0.68);
+
+    font-size:
+        15px;
+
+    transition:
+        color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+
+.site-footer__column a:hover {
+    color:
+        var(--color-brand);
+
+    transform:
+        translateX(3px);
+}
+
+
+.site-footer__bottom {
+    border-top:
+        1px solid rgba(255, 255, 255, 0.10);
+
+    padding:
+        20px 0;
+}
+
+
+.site-footer__bottom p {
+    color:
+        rgba(255, 255, 255, 0.55);
+
+    font-size:
+        12px;
+
+    text-align:
+        center;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .site-nav {
+        gap:
+            28px;
+    }
+
+
+    .site-nav__link {
+        font-size:
+            17px;
+    }
+
+
+    .product-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .product-card__row {
+        grid-template-columns:
+            76px
+            minmax(90px, 1fr)
+            82px
+            82px;
+
+        column-gap:
+            8px;
+    }
+
+
+    .product-card__type-block {
+        grid-template-columns:
+            76px
+            minmax(90px, 1fr)
+            82px
+            82px;
+
+        column-gap:
+            8px;
+    }
+
+
+    .product-card__type-row {
+        grid-template-columns:
+            minmax(90px, 1fr)
+            82px
+            82px;
+
+        column-gap:
+            8px;
+    }
+
+
+    .product-card__badge {
+        width:
+            82px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET MENOR
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .site-header__inner {
+        padding:
+            0 24px;
+    }
+
+
+    .site-logo img {
+        width:
+            130px;
+
+        height:
+            130px;
+    }
+
+
+    .site-nav {
+        display:
+            none;
+    }
+
+
+    .menu-toggle {
+        display:
+            flex;
+    }
+
+
+    .products-hero {
+        min-height:
+            calc(100svh - var(--header-height));
+    }
+
+
+    .products-hero__text {
+        padding:
+            70px 0;
+    }
+
+
+    .products-hero__title {
+        font-size:
+            clamp(40px, 7vw, 58px);
+    }
+
+
+    .products-catalog {
+        padding:
+            80px 0;
+    }
+
+
+    .product-section + .product-section {
+        margin-top:
+            70px;
+    }
+
+
+    .site-footer__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .site-footer__brand {
+        grid-column:
+            1 / -1;
+    }
+
+
+    .site-footer__logo {
+        margin-left:
+            0;
+
+        margin-top:
+            5px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        height:
+            86px;
+    }
+
+
+    .site-header__inner {
+        padding:
+            0 18px;
+    }
+
+
+    .site-logo img {
+        width:
+            105px;
+
+        height:
+            105px;
+    }
+
+
+    .products-hero {
+        min-height:
+            calc(100svh - 86px);
+    }
+
+
+    .products-hero__background {
+        background-position:
+            62% center;
+    }
+
+
+    .products-hero__text {
+        padding:
+            55px 0;
+    }
+
+
+    .products-hero__eyebrow {
+        font-size:
+            11px;
+    }
+
+
+    .products-hero__title {
+        margin-top:
+            16px;
+
+        font-size:
+            clamp(36px, 11vw, 50px);
+    }
+
+
+    .products-hero__description {
+        font-size:
+            16px;
+    }
+
+
+    .products-catalog {
+        padding:
+            70px 0;
+    }
+
+
+    .product-section__heading {
+        margin-bottom:
+            30px;
+    }
+
+
+    .product-section__eyebrow {
+        font-size:
+            16px;
+    }
+
+
+    .product-section__title {
+        font-size:
+            31px;
+    }
+
+
+    .product-section__description {
+        font-size:
+            15px;
+    }
+
+
+    .product-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .product-card__image {
+        min-height:
+            235px;
+
+        padding:
+            20px 20px 8px;
+    }
+
+
+    .product-card__image img {
+        height:
+            195px;
+    }
+
+
+    .product-card__info {
+        padding:
+            0 22px 26px;
+    }
+
+
+    .product-card__row {
+        grid-template-columns:
+            78px
+            minmax(80px, 1fr)
+            82px
+            82px;
+
+        column-gap:
+            7px;
+    }
+
+
+    .product-card__type-block {
+        grid-template-columns:
+            78px
+            minmax(80px, 1fr)
+            82px
+            82px;
+
+        column-gap:
+            7px;
+    }
+
+
+    .product-card__type-row {
+        grid-template-columns:
+            minmax(80px, 1fr)
+            82px
+            82px;
+
+        column-gap:
+            7px;
+    }
+
+
+    .product-card__badge {
+        width:
+            82px;
+    }
+
+
+    .product-card--large-info
+    .product-card__image img {
+        height:
+            195px;
+    }
+
+
+    .products-closing {
+        padding:
+            45px 0;
+    }
+
+
+    .products-closing__title {
+        font-size:
+            32px;
+    }
+
+
+    .products-closing__text {
+        font-size:
+            15px;
+    }
+
+
+    .site-footer__grid {
+        grid-template-columns:
+            1fr;
+
+        gap:
+            34px;
+
+        padding:
+            48px 0 42px;
+    }
+
+
+    .site-footer__brand {
+        grid-column:
+            auto;
+    }
+
+
+    .site-footer__logo {
+        width:
+            125px;
+
+        height:
+            125px;
+
+        margin-left:
+            0;
+
+        margin-top:
+            0;
+    }
+
+
+    .site-footer__logo img {
+        width:
+            115px;
+
+        height:
+            115px;
+    }
+
+
+    .site-footer__column {
+        width:
+            100%;
+    }
+
+}
+/* =========================================================
+   AJUSTE ESPECÍFICO — SALINOR 1 TONELADA
+   ========================================================= */
+
+.product-card--large-info .product-card__type-row {
+    display: grid;
+
+    grid-template-columns:
+        110px
+        86px
+        86px;
+
+    align-items: center;
+
+    column-gap: 10px;
+
+    width: 100%;
+
+    transform: translateX(-35px);
+}
+
+
+.product-card--large-info .product-card__type-row .product-card__value {
+    grid-column: 1;
+}
+
+
+.product-card--large-info .product-card__type-row .product-card__badge--iodized {
+    grid-column: 2;
+    justify-self: start;
+}
+
+
+.product-card--large-info .product-card__type-row .product-card__badge--without-iodine {
+    grid-column: 3;
+    justify-self: start;
+}
+
+/* =========================================================
+   CORREÇÃO DEFINITIVA — SALINOR 25 KG
+   ========================================================= */
+
+.product-card--salinor-25 .product-card__type-row {
+    display: grid !important;
+
+    grid-template-columns:
+        90px
+        86px
+        86px !important;
+
+    grid-template-rows:
+        25px !important;
+
+    align-items: center !important;
+
+    column-gap: 8px !important;
+
+    width: 100% !important;
+
+    min-height: 25px !important;
+
+    transform: translateX(-15px);
+}
+
+
+.product-card--salinor-25 .product-card__type-row > .product-card__value {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+
+    align-self: center !important;
+}
+
+
+.product-card--salinor-25 .product-card__type-row > .product-card__badge--iodized {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    justify-self: start !important;
+    align-self: center !important;
+}
+
+
+.product-card--salinor-25 .product-card__type-row > .product-card__badge--without-iodine {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+
+    justify-self: start !important;
+    align-self: center !important;
+}
+
+/* =========================================================
+   EMA — NOVO LAYOUT DAS INFORMAÇÕES
+   ========================================================= */
+
+.product-card:has(
+    img[src*="ema.png"]
+) .product-card__specs {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   TAMANHO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="ema.png"]
+) .product-card__specs > .product-card__row {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-top: 0;
+
+    gap: 5px;
+}
+
+
+.product-card:has(
+    img[src*="ema.png"]
+) .product-card__specs > .product-card__row
+.product-card__label {
+    display: block;
+}
+
+
+.product-card:has(
+    img[src*="ema.png"]
+) .product-card__specs > .product-card__row
+.product-card__value {
+    display: block;
+}
+
+
+/* =========================================================
+   TIPOS
+   ========================================================= */
+
+.product-card:has(
+    img[src*="ema.png"]
+) .product-card__type-block {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    gap: 10px;
+}
+
+
+.product-card:has(
+    img[src*="ema.png"]
+) .product-card__type-block
+> .product-card__label {
+    display: block;
+}
+
+
+/* =========================================================
+   LISTA DOS TIPOS
+   ========================================================= */
+
+.product-card:has(
+    img[src*="ema.png"]
+) .product-card__type-list {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    gap: 9px;
+
+    padding-left: 0;
+}
+
+
+/* =========================================================
+   CADA TIPO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="ema.png"]
+) .product-card__type-row {
+    display: grid;
+
+    grid-template-columns:
+        105px
+        1fr;
+
+    align-items: center;
+
+    column-gap: 8px;
+
+    width: 100%;
+
+    min-height: 25px;
+}
+
+
+/* =========================================================
+   NOME DO TIPO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="ema.png"]
+) .product-card__type-row
+.product-card__value {
+    grid-column: 1;
+
+    grid-row: 1;
+
+    justify-self: start;
+}
+
+
+/* =========================================================
+   COM IODO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="ema.png"]
+) .product-card__type-row
+.product-card__badge--iodized {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    justify-self: center;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   SEM IODO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="ema.png"]
+) .product-card__type-row
+.product-card__badge--without-iodine {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    justify-self: center;
+
+    transform: none;
+}
+
+/* =========================================================
+   BOIADEIRO — NOVO LAYOUT DAS INFORMAÇÕES
+   ========================================================= */
+
+.product-card:has(
+    img[src*="boiadeiro.png"]
+) .product-card__specs {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   TAMANHOS
+   ========================================================= */
+
+.product-card:has(
+    img[src*="boiadeiro.png"]
+) .product-card__specs > .product-card__row {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-top: 0;
+
+    gap: 5px;
+}
+
+
+.product-card:has(
+    img[src*="boiadeiro.png"]
+) .product-card__specs > .product-card__row
+.product-card__label {
+    display: block;
+}
+
+
+.product-card:has(
+    img[src*="boiadeiro.png"]
+) .product-card__specs > .product-card__row
+.product-card__value {
+    display: block;
+}
+
+
+/* =========================================================
+   TIPOS
+   ========================================================= */
+
+.product-card:has(
+    img[src*="boiadeiro.png"]
+) .product-card__type-block {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    gap: 10px;
+}
+
+
+.product-card:has(
+    img[src*="boiadeiro.png"]
+) .product-card__type-block
+> .product-card__label {
+    display: block;
+}
+
+
+/* =========================================================
+   LISTA DOS TIPOS
+   ========================================================= */
+
+.product-card:has(
+    img[src*="boiadeiro.png"]
+) .product-card__type-list {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    gap: 9px;
+
+    padding-left: 0;
+}
+
+
+/* =========================================================
+   CADA TIPO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="boiadeiro.png"]
+) .product-card__type-row {
+    display: grid;
+
+    grid-template-columns:
+        105px
+        1fr;
+
+    align-items: center;
+
+    column-gap: 8px;
+
+    width: 100%;
+
+    min-height: 25px;
+}
+
+
+/* =========================================================
+   NOME DO TIPO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="boiadeiro.png"]
+) .product-card__type-row
+.product-card__value {
+    grid-column: 1;
+
+    grid-row: 1;
+
+    justify-self: start;
+}
+
+
+/* =========================================================
+   COM IODO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="boiadeiro.png"]
+) .product-card__type-row
+.product-card__badge--iodized {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    justify-self: center;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   SEM IODO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="boiadeiro.png"]
+) .product-card__type-row
+.product-card__badge--without-iodine {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    justify-self: center;
+
+    transform: none;
+}
+
+/* =========================================================
+   AJUSTE ESPECÍFICO — LUZENTE
+   ========================================================= */
+
+.product-card:has(
+    img[src*="luzente.png"]
+) .product-card__type-row {
+    grid-template-columns:
+        90px
+        86px;
+
+    column-gap:
+        8px;
+
+    width:
+        100%;
+}
+
+
+.product-card:has(
+    img[src*="luzente.png"]
+) .product-card__type-row .product-card__value {
+    grid-column:
+        1;
+}
+
+
+.product-card:has(
+    img[src*="luzente.png"]
+) .product-card__type-row {
+    grid-template-columns:
+        90px 1fr !important;
+
+    column-gap:
+        8px !important;
+}
+
+
+.product-card:has(
+    img[src*="luzente.png"]
+) .product-card__type-row .product-card__value {
+    grid-column:
+        1 !important;
+}
+
+
+.product-card:has(
+    img[src*="luzente.png"]
+) .product-card__type-row .product-card__badge {
+    grid-column: 2 !important;
+
+    justify-self: start !important;
+
+    position: relative !important;
+
+    left: -35px !important;
+}
+
+/* =========================================================
+   CORREÇÃO FINAL — LUZENTE
+   ========================================================= */
+
+.product-card:has(img[src*="luzente.png"])
+.product-card__type-row
+.product-card__badge--iodized {
+    position: relative !important;
+
+    left: -40px !important;
+
+    margin-left: 0 !important;
+
+    transform: none !important;
+}
+
+/* =========================================================
+   CORREÇÃO — LUZENTE
+   ========================================================= */
+
+.product-card:has(img[src*="luzente.png"])
+.product-card__row {
+    grid-template-columns:
+        130px
+        86px
+        86px !important;
+
+    column-gap:
+        8px !important;
+}
+
+
+.product-card:has(img[src*="luzente.png"])
+.product-card__row
+.product-card__value {
+    grid-column:
+        1 !important;
+}
+
+
+.product-card:has(img[src*="luzente.png"])
+.product-card__row
+.product-card__badge--iodized {
+    grid-column:
+        2 !important;
+
+    justify-self:
+        center !important;
+}
+
+/* =========================================================
+   AJUSTE ESPECÍFICO — MONARCA REFINADO COM IODO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="monarca-refinado-com-iodo.png"]
+) .product-card__row {
+    grid-template-columns:
+        130px
+        86px
+        86px !important;
+
+    column-gap:
+        8px !important;
+}
+
+
+.product-card:has(
+    img[src*="monarca-refinado-com-iodo.png"]
+) .product-card__row
+.product-card__value {
+    grid-column:
+        1 !important;
+}
+
+
+.product-card:has(
+    img[src*="monarca-refinado-com-iodo.png"]
+) .product-card__row
+.product-card__badge--iodized {
+    grid-column:
+        2 !important;
+
+    justify-self:
+        center !important;
+}
+
+/* =========================================================
+   AJUSTE ESPECÍFICO — MONARCA GRANULADO COM IODO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="monarca-granulado-com-iodo.png"]
+) .product-card__row {
+    grid-template-columns:
+        130px
+        86px
+        86px !important;
+
+    column-gap:
+        8px !important;
+}
+
+
+.product-card:has(
+    img[src*="monarca-granulado-com-iodo.png"]
+) .product-card__row
+.product-card__value {
+    grid-column:
+        1 !important;
+}
+
+
+.product-card:has(
+    img[src*="monarca-granulado-com-iodo.png"]
+) .product-card__row
+.product-card__badge--iodized {
+    grid-column:
+        2 !important;
+
+    justify-self:
+        center !important;
+}
+
+/* =========================================================
+   AJUSTE ESPECÍFICO — MONARCA GRANULADO SEM IODO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="monarca-granulado-sem-iodo.png"]
+) .product-card__row {
+    grid-template-columns:
+        130px
+        86px
+        86px !important;
+
+    column-gap:
+        8px !important;
+}
+
+
+.product-card:has(
+    img[src*="monarca-granulado-sem-iodo.png"]
+) .product-card__row
+.product-card__value {
+    grid-column:
+        1 !important;
+}
+
+
+.product-card:has(
+    img[src*="monarca-granulado-sem-iodo.png"]
+) .product-card__row
+.product-card__badge--without-iodine {
+    grid-column:
+        2 !important;
+
+    justify-self:
+        center !important;
+}
+
+/* =========================================================
+   AJUSTE ESPECÍFICO — MONARCA REFINADO SEM IODO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="monarca-refinado-sem-iodo.png"]
+) .product-card__row {
+    grid-template-columns:
+        130px
+        86px
+        86px !important;
+
+    column-gap:
+        8px !important;
+}
+
+
+.product-card:has(
+    img[src*="monarca-refinado-sem-iodo.png"]
+) .product-card__row
+.product-card__value {
+    grid-column:
+        1 !important;
+}
+
+
+.product-card:has(
+    img[src*="monarca-refinado-sem-iodo.png"]
+) .product-card__row
+.product-card__badge--without-iodine {
+    grid-column:
+        2 !important;
+
+    justify-self:
+        center !important;
+}
+
+/* =========================================================
+   SALINOR 25 KG — AJUSTE FINAL
+   ========================================================= */
+
+.product-card--salinor-25 .product-card__specs {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   TAMANHO
+   ========================================================= */
+
+.product-card--salinor-25 .product-card__specs > .product-card__row {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-top: 0;
+
+    gap: 5px;
+}
+
+
+.product-card--salinor-25
+.product-card__specs > .product-card__row
+.product-card__label {
+    display: block;
+}
+
+
+.product-card--salinor-25
+.product-card__specs > .product-card__row
+.product-card__value {
+    display: block;
+}
+
+
+/* =========================================================
+   TIPOS
+   ========================================================= */
+
+.product-card--salinor-25 .product-card__type-block {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    gap: 10px;
+}
+
+
+.product-card--salinor-25
+.product-card__type-block
+> .product-card__label {
+    display: block;
+}
+
+
+/* =========================================================
+   LISTA
+   ========================================================= */
+
+.product-card--salinor-25 .product-card__type-list {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    gap: 9px;
+
+    padding-left: 0;
+}
+
+
+/* =========================================================
+   LINHAS DOS TIPOS
+   ========================================================= */
+
+.product-card--salinor-25 .product-card__type-row {
+    display: grid;
+
+    grid-template-columns:
+        105px
+        86px
+        86px;
+
+    align-items: center;
+
+    column-gap: 8px;
+
+    width: 100%;
+
+    min-height: 25px;
+}
+
+
+/* =========================================================
+   NOME DO TIPO
+   ========================================================= */
+
+.product-card--salinor-25
+.product-card__type-row
+.product-card__value {
+    grid-column: 1;
+
+    grid-row: 1;
+
+    justify-self: start;
+
+    transform: translateX(15px);
+}
+
+
+/* =========================================================
+   COM IODO
+   ========================================================= */
+
+.product-card--salinor-25
+.product-card__type-row
+.product-card__badge--iodized {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    justify-self: center;
+}
+
+
+/* =========================================================
+   SEM IODO
+   ========================================================= */
+
+.product-card--salinor-25
+.product-card__type-row
+.product-card__badge--without-iodine {
+    grid-column: 3;
+
+    grid-row: 1;
+
+    justify-self: center;
+
+    transform: translateX(15px);
+}
+
+/* =========================================================
+   NEVADO — NOVO LAYOUT DAS INFORMAÇÕES
+   ========================================================= */
+
+.product-card:has(
+    img[src*="nevado.png"]
+) .product-card__specs {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   TAMANHO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="nevado.png"]
+) .product-card__specs
+> .product-card__row:nth-child(1) {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-top: 0;
+
+    gap: 5px;
+}
+
+
+.product-card:has(
+    img[src*="nevado.png"]
+) .product-card__specs
+> .product-card__row:nth-child(1)
+.product-card__label {
+    display: block;
+}
+
+
+.product-card:has(
+    img[src*="nevado.png"]
+) .product-card__specs
+> .product-card__row:nth-child(1)
+.product-card__value {
+    display: block;
+}
+
+
+/* =========================================================
+   TIPO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="nevado.png"]
+) .product-card__specs
+> .product-card__row:nth-child(2) {
+    display: grid;
+
+    grid-template-columns:
+        90px
+        1fr;
+
+    grid-template-rows:
+        auto
+        25px;
+
+    align-items: center;
+
+    column-gap: 8px;
+
+    row-gap: 5px;
+
+    width: 100%;
+
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   LABEL "TIPO:"
+   ========================================================= */
+
+.product-card:has(
+    img[src*="nevado.png"]
+) .product-card__specs
+> .product-card__row:nth-child(2)
+.product-card__label {
+    grid-column: 1 / -1;
+
+    grid-row: 1;
+
+    display: block;
+}
+
+
+/* =========================================================
+   NOME DO TIPO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="nevado.png"]
+) .product-card__specs
+> .product-card__row:nth-child(2)
+.product-card__value {
+    grid-column: 1;
+
+    grid-row: 2;
+
+    justify-self: start;
+}
+
+
+/* =========================================================
+   COM IODO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="nevado.png"]
+) .product-card__specs
+> .product-card__row:nth-child(2)
+.product-card__badge--iodized {
+    grid-column: 2;
+
+    grid-row: 2;
+
+    justify-self: center;
+
+    position: relative;
+
+    left: -15px;
+
+    transform: none;
+}
+
+/* =========================================================
+   MARLIN GROSSO — NOVO LAYOUT DAS INFORMAÇÕES
+   ========================================================= */
+
+.product-card:has(
+    img[src*="marlin-grosso.png"]
+) .product-card__specs {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   TAMANHO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="marlin-grosso.png"]
+) .product-card__specs
+> .product-card__row:nth-child(1) {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-top: 0;
+
+    gap: 5px;
+}
+
+
+.product-card:has(
+    img[src*="marlin-grosso.png"]
+) .product-card__specs
+> .product-card__row:nth-child(1)
+.product-card__label {
+    display: block;
+}
+
+
+.product-card:has(
+    img[src*="marlin-grosso.png"]
+) .product-card__specs
+> .product-card__row:nth-child(1)
+.product-card__value {
+    display: block;
+}
+
+
+/* =========================================================
+   TIPO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="marlin-grosso.png"]
+) .product-card__specs
+> .product-card__row:nth-child(2) {
+    display: grid;
+
+    grid-template-columns:
+        90px
+        1fr;
+
+    grid-template-rows:
+        auto
+        25px;
+
+    align-items: center;
+
+    column-gap: 8px;
+
+    row-gap: 5px;
+
+    width: 100%;
+
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   LABEL "TIPO:"
+   ========================================================= */
+
+.product-card:has(
+    img[src*="marlin-grosso.png"]
+) .product-card__specs
+> .product-card__row:nth-child(2)
+.product-card__label {
+    grid-column: 1 / -1;
+
+    grid-row: 1;
+
+    display: block;
+}
+
+
+/* =========================================================
+   NOME DO TIPO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="marlin-grosso.png"]
+) .product-card__specs
+> .product-card__row:nth-child(2)
+.product-card__value {
+    grid-column: 1;
+
+    grid-row: 2;
+
+    justify-self: start;
+}
+
+
+/* =========================================================
+   COM IODO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="marlin-grosso.png"]
+) .product-card__specs
+> .product-card__row:nth-child(2)
+.product-card__badge--iodized {
+    grid-column: 2;
+
+    grid-row: 2;
+
+    justify-self: center;
+
+    position: relative;
+
+    left: -15px;
+
+    transform: none;
+}
+
+/* =========================================================
+   MARLIN REFINADO — NOVO LAYOUT DAS INFORMAÇÕES
+   ========================================================= */
+
+.product-card:has(
+    img[src*="marlin.png"]
+) .product-card__specs {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   TAMANHO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="marlin.png"]
+) .product-card__specs
+> .product-card__row:nth-child(1) {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-top: 0;
+
+    gap: 5px;
+}
+
+
+.product-card:has(
+    img[src*="marlin.png"]
+) .product-card__specs
+> .product-card__row:nth-child(1)
+.product-card__label {
+    display: block;
+}
+
+
+.product-card:has(
+    img[src*="marlin.png"]
+) .product-card__specs
+> .product-card__row:nth-child(1)
+.product-card__value {
+    display: block;
+}
+
+
+/* =========================================================
+   TIPO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="marlin.png"]
+) .product-card__specs
+> .product-card__row:nth-child(2) {
+    display: grid;
+
+    grid-template-columns:
+        90px
+        1fr;
+
+    grid-template-rows:
+        auto
+        25px;
+
+    align-items: center;
+
+    column-gap: 8px;
+
+    row-gap: 5px;
+
+    width: 100%;
+
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   LABEL "TIPO:"
+   ========================================================= */
+
+.product-card:has(
+    img[src*="marlin.png"]
+) .product-card__specs
+> .product-card__row:nth-child(2)
+.product-card__label {
+    grid-column: 1 / -1;
+
+    grid-row: 1;
+
+    display: block;
+}
+
+
+/* =========================================================
+   NOME DO TIPO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="marlin.png"]
+) .product-card__specs
+> .product-card__row:nth-child(2)
+.product-card__value {
+    grid-column: 1;
+
+    grid-row: 2;
+
+    justify-self: start;
+}
+
+
+/* =========================================================
+   COM IODO
+   ========================================================= */
+
+.product-card:has(
+    img[src*="marlin.png"]
+) .product-card__specs
+> .product-card__row:nth-child(2)
+.product-card__badge--iodized {
+    grid-column: 2;
+
+    grid-row: 2;
+
+    justify-self: center;
+
+    position: relative;
+
+    left: -15px;
+
+    transform: none;
+}
