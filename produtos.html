@@ -16,14 +16,25 @@
     >
 
     <title>SOCOREL | Produtos</title>
+    <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+    <meta name="theme-color" content="#071b3a">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="SOCOREL">
+    <meta property="og:title" content="SOCOREL | Produtos">
+    <meta property="og:description" content="SOCOREL — produtos para consumo humano, aplicações industriais e pecuária.">
+    <meta property="og:image" content="assets/brand/og-image.jpg">
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/produtos.css">
 
+    <link rel="stylesheet" href="css/melhorias.css">
 </head>
 
 
 <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
 
     <!-- =====================================================
@@ -41,7 +52,7 @@
             >
 
                 <img
-                    src="assets/brand/logo-socorel.png"
+                    src="assets/brand/logo-socorel.png" width="360" height="356"
                     alt="SOCOREL"
                 >
 
@@ -72,6 +83,7 @@
                 <a
                     href="produtos.html"
                     class="site-nav__link is-active"
+                    aria-current="page"
                 >
                     PRODUTOS
                 </a>
@@ -87,6 +99,7 @@
             </nav>
 
 
+            <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Socorel%20e%20gostaria%20de%20um%20or%C3%A7amento." class="btn btn-primary header-cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
             <button
                 class="menu-toggle"
                 type="button"
@@ -110,7 +123,7 @@
          CONTEÚDO PRINCIPAL
          ===================================================== -->
 
-    <main>
+    <main id="conteudo">
 
 
         <!-- =================================================
@@ -150,7 +163,15 @@
 
 
 
-        <!-- =================================================
+        <nav class="catalog-nav" aria-label="Categorias de produtos">
+<div class="container catalog-nav__inner">
+<a href="#consumo-humano">Consumo humano</a>
+<a href="#industrial">Industrial</a>
+<a href="#pecuaria">Pecuária</a>
+</div>
+</nav>
+
+<!-- =================================================
              CATÁLOGO
              ================================================= -->
 
@@ -200,7 +221,7 @@
                             <div class="product-card__image">
 
                                 <img
-                                    src="assets/products/consumo/marlin.png"
+                                    src="assets/products/consumo/marlin.webp" width="450" height="450" loading="lazy" decoding="async"
                                     alt="Marlin refinado"
                                 >
 
@@ -210,7 +231,7 @@
                             <div class="product-card__info">
 
                                 <h3 class="product-card__name">
-                                    MARLIN
+                                    MARLIN REFINADO
                                 </h3>
 
 
@@ -249,7 +270,8 @@
 
                             </div>
 
-                        </article>
+                        <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Marlin%20refinado%20%281%20kg%29." class="product-card__cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
 
 
 
@@ -262,7 +284,7 @@
                             <div class="product-card__image">
 
                                 <img
-                                    src="assets/products/consumo/marlin-grosso.png"
+                                    src="assets/products/consumo/marlin-grosso.webp" width="450" height="450" loading="lazy" decoding="async"
                                     alt="Marlin grosso"
                                 >
 
@@ -272,7 +294,7 @@
                             <div class="product-card__info">
 
                                 <h3 class="product-card__name">
-                                    MARLIN
+                                    MARLIN GROSSO
                                 </h3>
 
 
@@ -311,7 +333,8 @@
 
                             </div>
 
-                        </article>
+                        <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Marlin%20grosso%20%281%20kg%29." class="product-card__cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
 
 
 
@@ -324,7 +347,7 @@
                             <div class="product-card__image">
 
                                 <img
-                                    src="assets/products/consumo/nevado.png"
+                                    src="assets/products/consumo/nevado.webp" width="448" height="450" loading="lazy" decoding="async"
                                     alt="Nevado"
                                 >
 
@@ -373,7 +396,8 @@
 
                             </div>
 
-                        </article>
+                        <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Nevado%20%281%20kg%29." class="product-card__cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
 
                     </div>
 
@@ -426,7 +450,7 @@
     <div class="product-card__image">
 
         <img
-            src="assets/products/industrial/salinor-bigbag.png"
+            src="assets/products/industrial/salinor-bigbag.webp" width="418" height="450" loading="lazy" decoding="async"
             alt="Salinor uma tonelada"
         >
 
@@ -554,6 +578,7 @@
 
     </div>
 
+<a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Salinor%20%281%20tonelada%29." class="product-card__cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
 </article>
 
 
@@ -567,7 +592,7 @@
                             <div class="product-card__image">
 
                                 <img
-                                    src="assets/products/industrial/monarca-refinado-sem-iodo.png"
+                                    src="assets/products/industrial/monarca-refinado-sem-iodo.webp" width="450" height="450" loading="lazy" decoding="async"
                                     alt="Monarca refinado sem iodo"
                                 >
 
@@ -577,7 +602,7 @@
                             <div class="product-card__info">
 
                                 <h3 class="product-card__name">
-                                    MONARCA
+                                    MONARCA REFINADO
                                 </h3>
 
 
@@ -616,7 +641,8 @@
 
                             </div>
 
-                        </article>
+                        <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Monarca%20refinado%20%2825%20kg%29." class="product-card__cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
 
 
 
@@ -629,7 +655,7 @@
                             <div class="product-card__image">
 
                                 <img
-                                    src="assets/products/industrial/monarca-granulado-sem-iodo.png"
+                                    src="assets/products/industrial/monarca-granulado-sem-iodo.webp" width="448" height="450" loading="lazy" decoding="async"
                                     alt="Monarca granulado sem iodo"
                                 >
 
@@ -639,7 +665,7 @@
                             <div class="product-card__info">
 
                                 <h3 class="product-card__name">
-                                    MONARCA
+                                    MONARCA GRANULADO
                                 </h3>
 
 
@@ -678,7 +704,8 @@
 
                             </div>
 
-                        </article>
+                        <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Monarca%20granulado%20%2825%20kg%29." class="product-card__cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
 
 
 
@@ -691,7 +718,7 @@
                             <div class="product-card__image">
 
                                 <img
-                                    src="assets/products/industrial/monarca-granulado-com-iodo.png"
+                                    src="assets/products/industrial/monarca-granulado-com-iodo.webp" width="448" height="450" loading="lazy" decoding="async"
                                     alt="Monarca granulado com iodo"
                                 >
 
@@ -701,7 +728,7 @@
                             <div class="product-card__info">
 
                                 <h3 class="product-card__name">
-                                    MONARCA
+                                    MONARCA GRANULADO
                                 </h3>
 
 
@@ -740,7 +767,8 @@
 
                             </div>
 
-                        </article>
+                        <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Monarca%20granulado%20%2825%20kg%29." class="product-card__cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
 
 
 
@@ -753,7 +781,7 @@
                             <div class="product-card__image">
 
                                 <img
-                                    src="assets/products/industrial/monarca-refinado-com-iodo.png"
+                                    src="assets/products/industrial/monarca-refinado-com-iodo.webp" width="450" height="450" loading="lazy" decoding="async"
                                     alt="Monarca refinado com iodo"
                                 >
 
@@ -763,7 +791,7 @@
                             <div class="product-card__info">
 
                                 <h3 class="product-card__name">
-                                    MONARCA
+                                    MONARCA REFINADO
                                 </h3>
 
 
@@ -802,7 +830,8 @@
 
                             </div>
 
-                        </article>
+                        <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Monarca%20refinado%20%2825%20kg%29." class="product-card__cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
 
 
 
@@ -815,7 +844,7 @@
                             <div class="product-card__image">
 
                                 <img
-                                    src="assets/products/industrial/salinor-25kg.png"
+                                    src="assets/products/industrial/salinor-25kg.webp" width="450" height="450" loading="lazy" decoding="async"
                                     alt="Salinor 25 kg"
                                 >
 
@@ -890,7 +919,8 @@
 
                             </div>
 
-                        </article>
+                        <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Salinor%20%2825%20kg%29." class="product-card__cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
 
                     </div>
 
@@ -939,7 +969,7 @@
                             <div class="product-card__image">
 
                                 <img
-                                    src="assets/products/pecuaria/luzente.png"
+                                    src="assets/products/pecuaria/luzente.webp" width="450" height="450" loading="lazy" decoding="async"
                                     alt="Luzente"
                                 >
 
@@ -988,7 +1018,8 @@
 
                             </div>
 
-                        </article>
+                        <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Luzente%20%2825%20kg%29." class="product-card__cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
 
 
 
@@ -1001,7 +1032,7 @@
                             <div class="product-card__image">
 
                                 <img
-                                    src="assets/products/pecuaria/ema.png"
+                                    src="assets/products/pecuaria/ema.webp" width="450" height="450" loading="lazy" decoding="async"
                                     alt="Ema"
                                 >
 
@@ -1072,7 +1103,8 @@
 
                             </div>
 
-                        </article>
+                        <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Ema%20%2825%20kg%29." class="product-card__cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
 
 
 
@@ -1085,7 +1117,7 @@
                             <div class="product-card__image">
 
                                 <img
-                                    src="assets/products/pecuaria/boiadeiro.png"
+                                    src="assets/products/pecuaria/boiadeiro.webp" width="450" height="450" loading="lazy" decoding="async"
                                     alt="Boiadeiro"
                                 >
 
@@ -1156,7 +1188,8 @@
 
                             </div>
 
-                        </article>
+                        <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Boiadeiro%20%2825%20kg%20e%2050%20kg%29." class="product-card__cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
 
                     </div>
 
@@ -1172,7 +1205,20 @@
              ENCERRAMENTO
              ================================================= -->
 
-        <section class="products-closing">
+        <section class="cta-band">
+<div class="container cta-band__inner">
+<div>
+<h2>Precisa de ficha técnica ou de grandes volumes?</h2>
+<p>Peça a ficha técnica e as condições comerciais direto com o nosso time.</p>
+</div>
+<div class="cta-band__actions">
+<a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20a%20ficha%20t%C3%A9cnica%20e%20as%20condi%C3%A7%C3%B5es%20comerciais%20dos%20produtos%20Socorel." class="btn btn-light" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+<a href="contato.html#orcamento" class="btn btn-outline">Enviar mensagem</a>
+</div>
+</div>
+</section>
+
+<section class="products-closing">
 
             <div class="container">
 
@@ -1222,7 +1268,7 @@
                 >
 
                     <img
-                        src="assets/brand/logo-socorel-footer.png"
+                        src="assets/brand/logo-socorel-footer.png" width="360" height="360" loading="lazy" decoding="async"
                         alt="SOCOREL"
                     >
 
@@ -1233,6 +1279,7 @@
                     Tradição, qualidade e soluções em sal
                     desde 1939.
                 </p>
+                <p class="site-footer__contact">Av. Nevaldo Rocha, 2095 – Alecrim, Natal/RN<br><a href="tel:+558432232955">(84) 3223-2955</a><br>Segunda a sexta, 7h às 17h</p>
 
             </div>
 
@@ -1285,24 +1332,16 @@
                 </h3>
 
 
-                <a href="contato.html">
-                    Telefones
-                </a>
+                <a href="contato.html#contato">Telefones</a>
 
 
-                <a href="contato.html">
-                    WhatsApp
-                </a>
+                <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Socorel%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">WhatsApp</a>
 
 
-                <a href="contato.html">
-                    E-mail
-                </a>
+                <a href="mailto:socorel@hotmail.com">E-mail</a>
 
 
-                <a href="contato.html">
-                    Localização
-                </a>
+                <a href="contato.html#localizacao">Localização</a>
 
             </div>
 
@@ -1324,6 +1363,7 @@
     </footer>
 
 <script src="js/menu.js" defer></script>
+<a class="wa-float" href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Socorel%20e%20gostaria%20de%20um%20or%C3%A7amento." aria-label="Falar com a Socorel pelo WhatsApp" target="_blank" rel="noopener noreferrer"><img src="assets/brand/whatsapp.png" width="96" height="88" loading="lazy" decoding="async" alt=""></a>
 </body>
 
 </html>

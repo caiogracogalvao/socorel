@@ -40,6 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && siteNav.classList.contains("is-open")) {
+            setMenuState(false);
+            menuToggle.focus();
+        }
+    });
+
     window.addEventListener("resize", () => {
         if (window.innerWidth > 850) {
             setMenuState(false);

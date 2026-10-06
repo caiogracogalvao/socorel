@@ -14,12 +14,25 @@
     >
 
     <title>SOCOREL | Desde 1939</title>
+    <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+    <meta name="theme-color" content="#071b3a">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="SOCOREL">
+    <meta property="og:title" content="SOCOREL | Desde 1939">
+    <meta property="og:description" content="SOCOREL — tradição desde 1939, oferecendo qualidade e soluções em sal.">
+    <meta property="og:image" content="assets/brand/og-image.jpg">
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="preload" as="image" href="assets/hero/hero-desktop.jpg" media="(min-width: 601px)">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"SOCOREL","foundingDate":"1939","telephone":["+558432232955","+558432136065"],"email":"socorel@hotmail.com","address":{"@type":"PostalAddress","streetAddress":"Av. Nevaldo Rocha, 2095","addressLocality":"Natal","addressRegion":"RN","postalCode":"59032-445","addressCountry":"BR"},"openingHours":"Mo-Fr 07:00-17:00","sameAs":["https://www.facebook.com/SOCOREL","https://www.instagram.com/socorel_rn/"]}</script>
+    <link rel="stylesheet" href="css/melhorias.css">
 </head>
 
-<body>
+<body class="page-home">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
     <!-- =====================================================
          CABEÇALHO
@@ -35,7 +48,7 @@
                 aria-label="SOCOREL - Início"
             >
                 <img
-                    src="assets/brand/logo-socorel.png"
+                    src="assets/brand/logo-socorel.png" width="360" height="356"
                     alt="SOCOREL"
                 >
             </a>
@@ -48,6 +61,7 @@
                 <a
                     href="index.html"
                     class="site-nav__link is-active"
+                    aria-current="page"
                 >
                     INÍCIO
                 </a>
@@ -75,6 +89,7 @@
 
             </nav>
 
+            <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Socorel%20e%20gostaria%20de%20um%20or%C3%A7amento." class="btn btn-primary header-cta" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
             <button
                 class="menu-toggle"
                 type="button"
@@ -91,7 +106,7 @@
     </header>
 
 
-    <main>
+    <main id="conteudo">
 
         <!-- =================================================
              HERO
@@ -114,247 +129,12 @@
                         atravessa gerações
                     </h1>
 
-                    <p class="hero__description">
-                        Há mais de 85 anos oferecendo qualidade e soluções em sal.
-                    </p>
+                    <p class="hero__description">Sal para consumo humano, indústria e pecuária, com a experiência de quem atua no Rio Grande do Norte desde 1939.</p>
 
                     <div class="hero__actions">
-
-                        <a
-                            href="empresa.html"
-                            class="btn btn-primary"
-                        >
-                            CONHEÇA A SOCOREL
-                        </a>
-
-                        <a
-                            href="produtos.html"
-                            class="btn btn-outline"
-                        >
-                            NOSSOS PRODUTOS
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
-             NOSSOS PRODUTOS
-             ================================================= -->
-
-        <section
-            class="products-preview"
-            id="produtos-preview"
-        >
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <span class="section-heading__eyebrow">
-                        CONHEÇA NOSSA LINHA
-                    </span>
-
-                    <h2 class="section-heading__title">
-                        NOSSOS PRODUTOS
-                    </h2>
-
-                    <span class="section-heading__line"></span>
-
-                </div>
-
-                <div class="product-category-grid">
-
-                    <!-- CONSUMO HUMANO -->
-
-                    <article class="category-card">
-
-                        <div class="category-card__header">
-
-                            <span
-                                class="category-card__icon"
-                                aria-hidden="true"
-                            >
-                                <svg
-                                    viewBox="0 0 48 48"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <circle
-                                        cx="24"
-                                        cy="15"
-                                        r="6"
-                                    />
-                                    <path
-                                        d="M13 37c0-7 4.8-12 11-12s11 5 11 12"
-                                    />
-                                </svg>
-                            </span>
-
-                            <h3>
-                                CONSUMO HUMANO
-                            </h3>
-
-                        </div>
-
-                        <p class="category-card__description">
-                            Produtos para o dia a dia, com qualidade e confiança.
-                        </p>
-
-                        <div class="category-card__products">
-
-                            <img
-                                src="assets/products/consumo/marlin.png"
-                                alt="Sal Marlin refinado"
-                            >
-
-                            <img
-                                src="assets/products/consumo/nevado.png"
-                                alt="Sal Nevado moído"
-                            >
-
-                        </div>
-
-                        <a
-                            href="produtos.html#consumo-humano"
-                            class="category-card__link"
-                        >
-                            VER PRODUTOS
-                            <span aria-hidden="true">→</span>
-                        </a>
-
-                    </article>
-
-
-                    <!-- INDUSTRIAL -->
-
-                    <article class="category-card">
-
-                        <div class="category-card__header">
-
-                            <span
-                                class="category-card__icon"
-                                aria-hidden="true"
-                            >
-                                <svg
-                                    viewBox="0 0 48 48"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M8 39V20l10 5V16l10 5V10l12 7v22"
-                                    />
-                                    <path d="M8 39h32"/>
-                                    <path d="M15 30h4M25 30h4M15 35h4M25 35h4"/>
-                                </svg>
-                            </span>
-
-                            <h3>
-                                INDUSTRIAL
-                            </h3>
-
-                        </div>
-
-                        <p class="category-card__description">
-                            Soluções em sal para diferentes aplicações e necessidades.
-                        </p>
-
-                        <div class="category-card__products">
-
-                            <img
-                                src="assets/products/industrial/salinor-25kg.png"
-                                alt="Salinor industrial"
-                            >
-
-                            <img
-                                src="assets/products/industrial/monarca-refinado-com-iodo.png"
-                                alt="Sal Monarca refinado com iodo"
-                            >
-
-                        </div>
-
-                        <a
-                            href="produtos.html#industrial"
-                            class="category-card__link"
-                        >
-                            VER PRODUTOS
-                            <span aria-hidden="true">→</span>
-                        </a>
-
-                    </article>
-
-
-                    <!-- PECUÁRIA -->
-
-                    <article class="category-card">
-
-                        <div class="category-card__header">
-
-                            <span
-                                class="category-card__icon"
-                                aria-hidden="true"
-                            >
-                                <svg
-                                    viewBox="0 0 48 48"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12 31l-2-8 5-6 7 1 5-5 7 3 2 6-3 8-7 4H19z"
-                                    />
-                                    <path d="M17 18l-2-5"/>
-                                    <path d="M29 17l3-5"/>
-                                    <circle
-                                        cx="19"
-                                        cy="23"
-                                        r="1.5"
-                                    />
-                                    <path d="M27 27c2 1 4 1 6 0"/>
-                                </svg>
-                            </span>
-
-                            <h3>
-                                PECUÁRIA
-                            </h3>
-
-                        </div>
-
-                        <p class="category-card__description">
-                            Produtos para atender às necessidades da pecuária.
-                        </p>
-
-                        <div
-                            class="category-card__products category-card__products--three"
-                        >
-
-                            <img
-                                src="assets/products/pecuaria/luzente.png"
-                                alt="Sal Luzente"
-                            >
-
-                            <img
-                                src="assets/products/pecuaria/ema.png"
-                                alt="Sal Ema"
-                            >
-
-                            <img
-                                src="assets/products/pecuaria/boiadeiro.png"
-                                alt="Sal Boiadeiro"
-                            >
-
-                        </div>
-
-                        <a
-                            href="produtos.html#pecuaria"
-                            class="category-card__link"
-                        >
-                            VER PRODUTOS
-                            <span aria-hidden="true">→</span>
-                        </a>
-
-                    </article>
+<a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Socorel%20e%20gostaria%20de%20um%20or%C3%A7amento." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+<a href="produtos.html" class="btn btn-outline">Ver produtos</a>
+</div>
 
                 </div>
 
@@ -379,17 +159,7 @@
                         class="highlight__icon"
                         aria-hidden="true"
                     >
-                        <svg
-                            viewBox="0 0 48 48"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <circle cx="24" cy="14" r="6"/>
-                            <path d="M13 36c0-7 5-11 11-11s11 4 11 11"/>
-                            <circle cx="9" cy="20" r="4"/>
-                            <path d="M2 38c0-5 3-8 7-8"/>
-                            <circle cx="39" cy="20" r="4"/>
-                            <path d="M46 38c0-5-3-8-7-8"/>
-                        </svg>
+                        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="12" width="30" height="27" rx="3"/><path d="M9 21h30M17 8v8M31 8v8"/></svg>
                     </div>
 
                     <div class="highlight__content">
@@ -408,15 +178,7 @@
                         class="highlight__icon"
                         aria-hidden="true"
                     >
-                        <svg
-                            viewBox="0 0 48 48"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <circle cx="24" cy="24" r="16"/>
-                            <path d="M24 17v7l5 3"/>
-                            <path d="M14 12l-4-4"/>
-                            <path d="M34 12l4-4"/>
-                        </svg>
+                        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M10 12h28v19H22l-8 7v-7h-4z"/><path d="M17 20h14M17 25h9"/></svg>
                     </div>
 
                     <div class="highlight__content">
@@ -485,7 +247,252 @@
 
         </section>
 
-    </main>
+<section class="featured" id="destaques">
+<div class="container">
+<div class="section-heading">
+<span class="section-heading__eyebrow">Carros-chefe da Socorel</span>
+<h2 class="section-heading__title">Marlin e Nevado</h2>
+<span class="section-heading__line"></span>
+</div>
+<div class="featured__grid">
+<article class="featured-card">
+<img src="assets/products/consumo/marlin.webp" width="450" height="450" loading="lazy" decoding="async" alt="Sal Marlin refinado">
+<h3>Marlin Refinado</h3>
+<p>Refinado, 1 kg, com iodo</p>
+<a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Marlin%20refinado%20%281%20kg%29." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
+<article class="featured-card">
+<img src="assets/products/consumo/marlin-grosso.webp" width="450" height="450" loading="lazy" decoding="async" alt="Sal Marlin grosso">
+<h3>Marlin Grosso</h3>
+<p>Grosso, 1 kg, com iodo</p>
+<a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Marlin%20grosso%20%281%20kg%29." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
+<article class="featured-card">
+<img src="assets/products/consumo/nevado.webp" width="448" height="450" loading="lazy" decoding="async" alt="Sal Nevado moído">
+<h3>Nevado Moído</h3>
+<p>Moído, 1 kg, com iodo</p>
+<a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20do%20sal%20Nevado%20mo%C3%ADdo%20%281%20kg%29." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+</article>
+</div>
+<a class="featured__more" href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Quero%20saber%20como%20revender%20Marlin%20e%20Nevado." target="_blank" rel="noopener noreferrer">Quer revender Marlin e Nevado? Fale com o comercial</a>
+</div>
+</section>
+
+<!-- =================================================
+             NOSSOS PRODUTOS
+             ================================================= -->
+
+        <section
+            class="products-preview"
+            id="produtos-preview"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-heading__eyebrow">
+                        CONHEÇA NOSSA LINHA
+                    </span>
+
+                    <h2 class="section-heading__title">
+                        NOSSOS PRODUTOS
+                    </h2>
+
+                    <span class="section-heading__line"></span>
+
+                </div>
+
+                <div class="product-category-grid">
+
+                    <!-- CONSUMO HUMANO -->
+
+                    <article class="category-card">
+
+                        <div class="category-card__header">
+
+                            <span
+                                class="category-card__icon"
+                                aria-hidden="true"
+                            >
+                                <svg
+                                    viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle
+                                        cx="24"
+                                        cy="15"
+                                        r="6"
+                                    />
+                                    <path
+                                        d="M13 37c0-7 4.8-12 11-12s11 5 11 12"
+                                    />
+                                </svg>
+                            </span>
+
+                            <h3>
+                                CONSUMO HUMANO
+                            </h3>
+
+                        </div>
+
+                        <p class="category-card__description">
+                            Marlin e Nevado: sal refinado, grosso e moído, todos com iodo.
+                        </p>
+
+                        <div class="category-card__products">
+
+                            <figure><img src="assets/products/consumo/marlin.webp" width="450" height="450" loading="lazy" decoding="async" alt="Sal Marlin refinado"><figcaption>Marlin</figcaption></figure>
+
+                            <figure><img src="assets/products/consumo/nevado.webp" width="448" height="450" loading="lazy" decoding="async" alt="Sal Nevado moído"><figcaption>Nevado</figcaption></figure>
+
+                        </div>
+
+                        <a
+                            href="produtos.html#consumo-humano"
+                            class="category-card__link"
+                        >
+                            VER PRODUTOS
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- INDUSTRIAL -->
+
+                    <article class="category-card">
+
+                        <div class="category-card__header">
+
+                            <span
+                                class="category-card__icon"
+                                aria-hidden="true"
+                            >
+                                <svg
+                                    viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M8 39V20l10 5V16l10 5V10l12 7v22"
+                                    />
+                                    <path d="M8 39h32"/>
+                                    <path d="M15 30h4M25 30h4M15 35h4M25 35h4"/>
+                                </svg>
+                            </span>
+
+                            <h3>
+                                INDUSTRIAL
+                            </h3>
+
+                        </div>
+
+                        <p class="category-card__description">
+                            Soluções em sal para diferentes aplicações e necessidades.
+                        </p>
+
+                        <div class="category-card__products">
+
+                            <figure><img src="assets/products/industrial/salinor-25kg.webp" width="450" height="450" loading="lazy" decoding="async" alt="Salinor industrial"><figcaption>Salinor</figcaption></figure>
+
+                            <figure><img src="assets/products/industrial/monarca-refinado-com-iodo.webp" width="450" height="450" loading="lazy" decoding="async" alt="Sal Monarca refinado com iodo"><figcaption>Monarca</figcaption></figure>
+
+                        </div>
+
+                        <a
+                            href="produtos.html#industrial"
+                            class="category-card__link"
+                        >
+                            VER PRODUTOS
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- PECUÁRIA -->
+
+                    <article class="category-card">
+
+                        <div class="category-card__header">
+
+                            <span
+                                class="category-card__icon"
+                                aria-hidden="true"
+                            >
+                                <svg
+                                    viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12 31l-2-8 5-6 7 1 5-5 7 3 2 6-3 8-7 4H19z"
+                                    />
+                                    <path d="M17 18l-2-5"/>
+                                    <path d="M29 17l3-5"/>
+                                    <circle
+                                        cx="19"
+                                        cy="23"
+                                        r="1.5"
+                                    />
+                                    <path d="M27 27c2 1 4 1 6 0"/>
+                                </svg>
+                            </span>
+
+                            <h3>
+                                PECUÁRIA
+                            </h3>
+
+                        </div>
+
+                        <p class="category-card__description">
+                            Produtos para atender às necessidades da pecuária.
+                        </p>
+
+                        <div
+                            class="category-card__products category-card__products--three"
+                        >
+
+                            <figure><img src="assets/products/pecuaria/luzente.webp" width="450" height="450" loading="lazy" decoding="async" alt="Sal Luzente"><figcaption>Luzente</figcaption></figure>
+
+                            <figure><img src="assets/products/pecuaria/ema.webp" width="450" height="450" loading="lazy" decoding="async" alt="Sal Ema"><figcaption>Ema</figcaption></figure>
+
+                            <figure><img src="assets/products/pecuaria/boiadeiro.webp" width="450" height="450" loading="lazy" decoding="async" alt="Sal Boiadeiro"><figcaption>Boiadeiro</figcaption></figure>
+
+                        </div>
+
+                        <a
+                            href="produtos.html#pecuaria"
+                            class="category-card__link"
+                        >
+                            VER PRODUTOS
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+
+    <section class="cta-band">
+<div class="container cta-band__inner">
+<div>
+<h2>Precisa de sal para a sua operação?</h2>
+<p>Conte qual produto e qual quantidade. O time comercial responde de segunda a sexta, das 7h às 17h.</p>
+</div>
+<div class="cta-band__actions">
+<a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Socorel%20e%20gostaria%20de%20um%20or%C3%A7amento." class="btn btn-light" target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+<a href="tel:+558432232955" class="btn btn-outline">Ligar (84) 3223-2955</a>
+</div>
+</div>
+</section>
+
+</main>
 
 
     <!-- =====================================================
@@ -506,7 +513,7 @@
                     aria-label="SOCOREL - Início"
                 >
                     <img
-                        src="assets/brand/logo-socorel-footer.png"
+                        src="assets/brand/logo-socorel-footer.png" width="360" height="360" loading="lazy" decoding="async"
                         alt="SOCOREL"
                     >
                 </a>
@@ -515,6 +522,7 @@
                     Tradição, qualidade e soluções em sal
                     desde 1939.
                 </p>
+                <p class="site-footer__contact">Av. Nevaldo Rocha, 2095 – Alecrim, Natal/RN<br><a href="tel:+558432232955">(84) 3223-2955</a><br>Segunda a sexta, 7h às 17h</p>
 
             </div>
 
@@ -559,21 +567,13 @@
 
                 <h3>CONTATO</h3>
 
-                <a href="contato.html">
-                    Telefones
-                </a>
+                <a href="contato.html#contato">Telefones</a>
 
-                <a href="contato.html">
-                    WhatsApp
-                </a>
+                <a href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Socorel%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">WhatsApp</a>
 
-                <a href="contato.html">
-                    E-mail
-                </a>
+                <a href="mailto:socorel@hotmail.com">E-mail</a>
 
-                <a href="contato.html">
-                    Localização
-                </a>
+                <a href="contato.html#localizacao">Localização</a>
 
             </div>
 
@@ -594,5 +594,6 @@
 
     </footer>
 <script src="js/menu.js" defer></script>
+<a class="wa-float" href="https://wa.me/558432232955?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Socorel%20e%20gostaria%20de%20um%20or%C3%A7amento." aria-label="Falar com a Socorel pelo WhatsApp" target="_blank" rel="noopener noreferrer"><img src="assets/brand/whatsapp.png" width="96" height="88" loading="lazy" decoding="async" alt=""></a>
 </body>
 </html>

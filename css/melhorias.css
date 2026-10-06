@@ -1,0 +1,214 @@
+/* =========================================================
+   MELHORIAS UX/UI — carregado por último em todas as páginas.
+   Para desfazer qualquer bloco, basta apagá-lo daqui.
+   ========================================================= */
+
+:root {
+    --header-height: 92px;
+    --brand-text: #007d62;        /* verde da marca com contraste AA (5,1:1) para texto e botões */
+    --brand-text-hover: #00624d;
+}
+
+/* ---------- Acessibilidade geral ---------- */
+.skip-link {
+    position: absolute; left: 12px; top: -64px; z-index: 10000;
+    padding: 12px 18px; border-radius: 4px;
+    background: var(--color-navy); color: #fff; font-weight: 700;
+}
+.skip-link:focus { top: 12px; }
+
+section[id], [id="orcamento"] { scroll-margin-top: calc(var(--header-height) + 16px); }
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+/* ---------- Contraste: verde de texto/botões ---------- */
+.btn-primary { background: var(--brand-text); }
+.btn-primary:hover { background: var(--brand-text-hover); }
+.btn { font-size: 14px; }
+.btn-light { background: #fff; color: var(--color-navy); }
+.btn-light:hover { background: var(--color-off-white); }
+.site-nav__link:hover, .site-nav__link.is-active { color: var(--brand-text); }
+.section-heading__eyebrow, .product-section__eyebrow,
+.contact-details__eyebrow, .contact-location__eyebrow,
+.company-story__eyebrow { color: var(--brand-text); font-size: 13px; }
+.category-card__link { color: var(--brand-text); font-size: 13px; }
+.category-card__link:hover { color: var(--brand-text-hover); }
+.location-whatsapp { background: var(--brand-text); }
+
+/* ---------- Header fixo, mais baixo, com CTA ---------- */
+.site-header { position: sticky; top: 0; z-index: 50; height: var(--header-height); }
+.site-logo img { width: auto; height: 72px; }
+.site-nav { margin-left: auto; margin-right: 28px; gap: 34px; }
+.site-nav__link { font-size: 16px; padding: 34px 0; }
+.site-nav__link::after { bottom: 26px; }
+.header-cta { min-height: 44px; padding: 0 20px; white-space: nowrap; }
+
+@media (max-width: 1100px) { .site-nav { gap: 24px; } .site-nav__link { font-size: 15px; } }
+
+@media (max-width: 850px) {
+    :root { --header-height: 72px; }
+    .site-logo img { width: auto; height: 54px; }
+    .site-nav { margin: 0; }
+    .header-cta { margin-left: auto; margin-right: 6px; min-height: 40px; padding: 0 14px; font-size: 12px; }
+}
+@media (max-width: 600px) {
+    .site-header { height: var(--header-height); }
+    .site-logo img { width: auto; height: 48px; }
+    .hero { min-height: calc(100svh - var(--header-height)); }
+}
+
+/* hero da home deixa a faixa de diferenciais aparecer na primeira tela */
+@media (min-width: 851px) {
+    .hero { min-height: max(520px, calc(100vh - var(--header-height) - 96px)); }
+}
+
+/* ---------- Botão flutuante de WhatsApp ---------- */
+.wa-float {
+    position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 60;
+    display: flex; align-items: center; justify-content: center;
+    width: 58px; height: 58px; border-radius: 50%;
+    background: #fff; border: 1px solid var(--color-border);
+    box-shadow: 0 8px 22px rgba(7, 27, 58, 0.28);
+    transition: transform var(--transition-fast);
+}
+.wa-float:hover { transform: scale(1.06); }
+.wa-float img { width: 36px; height: 36px; }
+
+/* ---------- Home: faixa de diferenciais legível ---------- */
+.highlight__content strong { font-size: 15px; }
+.highlight__content span { font-size: 12px !important; color: rgba(255, 255, 255, 0.86); }
+
+/* ---------- Home: destaque Marlin e Nevado ---------- */
+.featured { padding: 84px 0 72px; background: #fff; }
+.featured__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.featured-card {
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    padding: 28px 22px 24px; border: 1px solid var(--color-border); border-radius: 6px;
+    background: var(--color-off-white);
+}
+.featured-card img { height: 240px; width: auto; object-fit: contain; }
+.featured-card h3 { margin-top: 18px; color: var(--color-navy); font: 500 22px/1.2 Georgia, "Times New Roman", serif; }
+.featured-card p { margin-top: 6px; color: var(--color-text-soft); font-size: 15px; }
+.featured-card .btn { margin-top: 18px; width: 100%; }
+.featured__more { display: block; margin-top: 28px; text-align: center; color: var(--brand-text); font-weight: 700; font-size: 15px; text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 850px) {
+    .featured { padding: 64px 0 56px; }
+    .featured__grid { grid-template-columns: 1fr; }
+    .featured-card img { height: 200px; }
+}
+
+/* ---------- Home: nomes sob os produtos dos cards ---------- */
+.category-card__description { font-size: 15px; }
+.category-card__products figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.category-card__products figcaption { font-size: 13px; font-weight: 700; color: var(--color-navy); text-align: center; }
+.category-card__products--three { gap: 4px !important; }
+.category-card__products--three figure { flex: 1 1 0; min-width: 0; }
+.category-card__products--three img { width: 100%; height: auto; max-width: 125px; }
+
+/* ---------- Faixa de chamada para orçamento ---------- */
+.cta-band { background: var(--brand-text); color: #fff; padding: 60px 0; }
+.cta-band__inner { display: flex; align-items: center; justify-content: space-between; gap: 28px 40px; flex-wrap: wrap; }
+.cta-band h2 { font: 500 clamp(26px, 3vw, 36px)/1.15 Georgia, "Times New Roman", serif; }
+.cta-band p { margin-top: 10px; max-width: 560px; color: rgba(255, 255, 255, 0.9); }
+.cta-band__actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 600px) {
+    .page-home main { display: flex; flex-direction: column; }
+    .page-home .hero { order: 0; }
+    .page-home .featured { order: 1; }
+    .page-home .products-preview { order: 2; }
+    .page-home .highlights { order: 3; }
+    .page-home .cta-band { order: 4; }
+}
+
+/* ---------- Produtos ---------- */
+.catalog-nav {
+    position: sticky; top: var(--header-height); z-index: 40;
+    background: rgba(255, 255, 255, 0.97); border-bottom: 1px solid var(--color-border);
+}
+.catalog-nav__inner { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; }
+.catalog-nav a {
+    flex: 0 0 auto; padding: 10px 18px; border: 1px solid var(--color-border); border-radius: 999px;
+    color: var(--color-navy); font-size: 14px; font-weight: 700;
+}
+.catalog-nav a:hover { border-color: var(--brand-text); color: var(--brand-text); }
+.product-section { scroll-margin-top: calc(var(--header-height) + 76px); }
+
+.product-grid { align-items: stretch !important; }
+.product-card__info { padding-bottom: 18px; }
+.product-card__row { display: flex !important; flex-wrap: wrap; align-items: center; gap: 6px 10px !important; }
+.product-card__label { min-width: 78px; font-size: 13px; }
+.product-card__value { font-size: 15px; }
+.product-card__type-row { display: flex !important; flex-wrap: wrap; align-items: center; gap: 6px 8px !important; }
+.product-card__type-row .product-card__value { min-width: 84px; }
+.product-card__badge { font-size: 12px !important; }
+.product-card__badge--iodized { background: var(--brand-text) !important; color: #fff !important; order: 1; }
+.product-card__badge--without-iodine { background: var(--color-navy) !important; color: #fff !important; border: 0 !important; order: 2; }
+.product-card__cta {
+    display: flex; align-items: center; justify-content: center; min-height: 44px;
+    margin: auto 20px 20px; border: 1px solid var(--brand-text); border-radius: 4px;
+    color: var(--brand-text); font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+.product-card__cta:hover { background: var(--brand-text); color: #fff; }
+
+/* ---------- Contato ---------- */
+.contact-card__icon svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.contact-card--whatsapp { border-color: var(--brand-text); }
+.social-row { grid-column: 1 / -1; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 12px; color: var(--color-text-soft); font-size: 14px; }
+.social-row a {
+    display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px;
+    border: 1px solid var(--color-border); border-radius: 999px; background: #fff;
+    color: var(--color-navy); font-size: 13px; font-weight: 700;
+}
+.social-row img { width: 20px; height: 20px; }
+
+.quote { padding: 84px 0; background: #fff; }
+.quote__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: start; }
+.quote h2 { color: var(--color-navy); font: 500 clamp(28px, 3vw, 38px)/1.15 Georgia, "Times New Roman", serif; }
+.quote__lead { margin-top: 14px; color: var(--color-text-soft); max-width: 420px; }
+.quote-form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.quote-form .field { display: flex; flex-direction: column; gap: 6px; }
+.quote-form .field--full { grid-column: 1 / -1; }
+.quote-form label { color: var(--color-navy); font-size: 14px; font-weight: 700; }
+.quote-form input, .quote-form select, .quote-form textarea {
+    width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid #7d8a94; border-radius: 4px;
+    background: #fff; color: var(--color-text);
+}
+.quote-form textarea { min-height: 120px; resize: vertical; }
+.quote-form input:focus, .quote-form select:focus, .quote-form textarea:focus { outline: 3px solid rgba(0, 125, 98, 0.35); outline-offset: 1px; border-color: var(--brand-text); }
+.quote-form .btn { justify-self: start; }
+.quote-form__note { grid-column: 1 / -1; color: var(--color-text-soft); font-size: 14px; }
+@media (max-width: 850px) {
+    .quote { padding: 60px 0; }
+    .quote__grid { grid-template-columns: 1fr; gap: 28px; }
+    .quote-form { grid-template-columns: 1fr; }
+}
+
+/* ---------- Rodapé ---------- */
+.site-footer__grid { padding: 48px 0 32px !important; align-items: start; }
+.site-footer__logo { width: auto; height: auto; padding: 0; margin: 0 0 14px; }
+.site-footer__logo img { width: auto; height: 110px; }
+.site-footer__contact { margin-top: 14px; max-width: 280px; color: rgba(255, 255, 255, 0.8); font-size: 14px; line-height: 1.65; }
+.site-footer__contact a { text-decoration: underline; text-underline-offset: 3px; }
+.site-footer__bottom p { font-size: 13px; color: rgba(255, 255, 255, 0.72); }
+@media (max-width: 850px) {
+    .site-footer__logo { width: auto; height: auto; margin: 0 0 14px; }
+    .site-footer__logo img { width: auto; height: 90px; }
+}
+
+/* Redes sociais: Instagram abaixo do Facebook (só no celular) */
+@media (max-width: 600px) {
+    .social-row {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        max-width: 240px;
+        margin-inline: auto;
+    }
+    .social-row span { text-align: center; }
+    .social-row a { justify-content: center; }
+}
