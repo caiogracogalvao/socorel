@@ -106,7 +106,9 @@ section[id], [id="orcamento"] { scroll-margin-top: calc(var(--header-height) + 1
 .category-card__products figcaption { font-size: 13px; font-weight: 700; color: var(--color-navy); text-align: center; }
 .category-card__products--three { gap: 4px !important; }
 .category-card__products--three figure { flex: 1 1 0; min-width: 0; }
-.category-card__products--three img { width: 100%; height: auto; max-width: 125px; }
+.category-card__products--three img { width: 135%; max-width: 150px; height: 225px; }
+@media (max-width: 1100px) { .category-card__products--three img { height: 205px; } }
+@media (max-width: 600px) { .category-card__products--three img { height: 195px; } }
 
 /* ---------- Faixa de chamada para orçamento ---------- */
 .cta-band { background: var(--brand-text); color: #fff; padding: 60px 0; }
@@ -212,3 +214,10 @@ section[id], [id="orcamento"] { scroll-margin-top: calc(var(--header-height) + 1
     .social-row span { text-align: center; }
     .social-row a { justify-content: center; }
 }
+
+/* Salinor 1 tonelada: 3 colunas fixas (tipo | COM IODO | SEM IODO), assim o SEM IODO sozinho (Grosso) alinha com os outros */
+.product-card--large-info .product-card__type-row { display: grid !important; grid-template-columns: 84px minmax(0, 1fr) minmax(0, 1fr); gap: 6px 8px !important; align-items: center; }
+.product-card--large-info .product-card__type-row .product-card__value { grid-column: 1; grid-row: 1; min-width: 0; }
+.product-card--large-info .product-card__badge { grid-row: 1; justify-self: start; box-sizing: border-box; width: 100%; max-width: 104px; min-width: 0; margin: 0 !important; padding-inline: 6px; white-space: nowrap; display: inline-flex; justify-content: center; }
+.product-card--large-info .product-card__badge--iodized { grid-column: 2; }
+.product-card--large-info .product-card__badge--without-iodine { grid-column: 3; }
